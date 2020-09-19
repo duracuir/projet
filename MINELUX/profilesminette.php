@@ -96,12 +96,12 @@ if (isset($_GET["username"])) {
                     </div>
                     <div id="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="/index.html/">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minettes/new/">Nouvelle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minettes/girls/">Filles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minettes/homme/">Hommes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minettes/vip/">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minettes/tours/">Tournées de Ville</a></li>
+                      <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nouvelles.html">Nouvelle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="toursdeville.html">Tournées de Ville</a></li>
                     
             </div>
                 </div>
@@ -129,6 +129,7 @@ if (isset($_GET["username"])) {
                 <li class="breadcrumb-item active">nom de la minette</li>
             </ol>
         </div>
+<form class="updating" action="profilesminette.php?username=<?php echo $username;?>" method="POST">
         <main class="container">
             <div class="row">
             <div class="content full">
@@ -141,7 +142,13 @@ if (isset($_GET["username"])) {
                                 <div class="col-xs-12 profile-picture">                        
                                     <div class="img">
                                      <a class="pitem" data-exthumbimage="chemin d la photo.jpeg" href=".jpeg">
-                                            <img class="img-full" src="fond/corps-dame.png" alt="gaby - girls escort paris">
+                                        <div class="bibi">
+                                            <?php 
+                                                echo '<div style="background-image: url(images/gallery/'.$results[0]->photos.');"></div>'
+                                            ?>
+                                        </div>
+                                            <!-- <img class="img-full" src="fond/corps-dame.png" alt="gaby - girls escort paris"> -->
+
                                             <div class="badges">
                                             <div class="top-left">
                                                 <svg class="ribbon" viewBox="0 0 132 132">
@@ -198,8 +205,7 @@ if (isset($_GET["username"])) {
                 </div>
                 
 <!-- INFORMATION DETAILLES SUR LA MINETTE-->
-</div>    
-<form class="updating" action="profilesminette.php?username=<?php echo $username;?>" method="POST">                 
+</div>                     
             <div class="col-xs-8">
                 <div class="box info">
                     <div class="row">

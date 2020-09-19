@@ -350,8 +350,13 @@ b, strong {
 .col-xs-12 {
     width: 100%;
 }
-#profile .profile-picture .img {
-    position: relative;
+#profile .profile-picture .img .pitem .bibi {
+    /*position: relative;*/
+    width: 100%;
+    height: 235px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 a, a:hover, a:focus, a:active:focus, button, button:hover, button:focus, button:active:focus {
     color: inherit;
@@ -834,3 +839,4 @@ footer {
     position: relative;
     top: 3px;
 }
+
