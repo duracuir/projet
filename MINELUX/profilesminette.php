@@ -141,11 +141,13 @@ if (isset($_GET["username"])) {
                             <div class="row lightgallery row-sm">
                                 <div class="col-xs-12 profile-picture">                        
                                     <div class="img">
-                                     <a class="pitem" data-exthumbimage="chemin d la photo.jpeg" href=".jpeg">
+                                    <?php 
+                                     echo '<a class="pitem" data-exthumbimage="chemin d la photo.jpeg" href="./instalike/gallery.php?username='.$username.'">
                                         <div class="bibi">
-                                            <?php 
-                                                echo '<div style="background-image: url(images/gallery/'.$results[0]->photos.');"></div>'
-                                            ?>
+                                            
+                                        <div style="background-image: url(images/gallery/'.$results[0]->photos.');"></div>'
+                                    ?>
+   
                                         </div>
                                             <!-- <img class="img-full" src="fond/corps-dame.png" alt="gaby - girls escort paris"> -->
 
