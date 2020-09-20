@@ -111,7 +111,7 @@ if (isset($_GET["username"])) {
             <div class="container">
             <div class="row">
                 <div class="col-xs-4 back"></div>
-                <a href="/" class="btn btn-black">Retour</a>
+                <a href="index.php" class="btn btn-black">Retour</a>
                 <div class="col-xs-4">
                     <h1 class="page-title">Nom de la minette</h1>
                 </div>
@@ -142,7 +142,7 @@ if (isset($_GET["username"])) {
                                 <div class="col-xs-12 profile-picture">                        
                                     <div class="img">
                                     <?php 
-                                     echo '<a class="pitem" data-exthumbimage="chemin d la photo.jpeg" href="./instalike/gallery.php?username='.$username.'">
+                                     echo '<a class="pitem" data-exthumbimage="chemin d la photo.jpeg" href="galleryphoto.php?username='.$username.'">
                                         <div class="bibi">
                                             
                                         <div style="background-image: url(images/gallery/'.$results[0]->photos.');"></div>'

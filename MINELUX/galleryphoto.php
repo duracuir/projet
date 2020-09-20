@@ -11,7 +11,7 @@ Developed by Robert Anthonie C. Soriano
       <meta charset="UTF-8">
       <title></title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="../css/biographie.css" />
+      <link rel="stylesheet" href="css/biographie.css" />
       <script src="js/vendor/jquery.js"></script>
       <script src="js/vendor/modernizr.js"></script>
    </head>
@@ -90,12 +90,12 @@ Developed by Robert Anthonie C. Soriano
                     </div>
                     <div id="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="../index.php">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../nouvelles.html">Nouvelle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../filles.html">Filles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../garcon.html">Hommes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../vip.html">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../toursdeville.html">Tournées de Ville</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nouvelles.html">Nouvelle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="toursdeville.html">Tournées de Ville</a></li>
                     
             </div>
                 </div>
@@ -105,7 +105,7 @@ Developed by Robert Anthonie C. Soriano
             <div class="container">
             <div class="row">
                 <div class="col-xs-4 back"></div>
-                <a href="../index.php" class="btn btn-black">Retour</a>
+                <a href="index.php" class="btn btn-black">Retour</a>
                 <div class="col-xs-4">
                     <h1 class="page-title">éditer profil de minette</h1>
                 </div>
@@ -125,7 +125,7 @@ Developed by Robert Anthonie C. Soriano
             <!-- Right Nav Section -->
             <ul class="right">
                <li class="divider"></li>
-               <li><a href="../panel.php">Accueil</a></li>
+               <li><a href="panel.php">Accueil</a></li>
                <li class="divider"></li>
                <li class="divider"></li>
                <!-- <li><a href="upload-photo.php" data-reveal-id="uploadModal" data-reveal-ajax="true">Ajouter Photo</a></li> -->
@@ -163,7 +163,7 @@ Developed by Robert Anthonie C. Soriano
             <?php } }?>
             <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
                <?php
-               require '../connexionBD.php';
+               require 'connexionBD.php';
                $username = $_GET['username'];
                $sql = 'SELECT * FROM tbl_photos WHERE username LIKE' . $pdo->quote($username);
                $stmt = $pdo->query($sql);
