@@ -1,4 +1,4 @@
-/*GENERAL*/
+                                                                                    /*GENERAL*/
 body
 {
     font-family: 'Open sans' , sans-serif;
@@ -22,7 +22,7 @@ p
     margin-inline-start: 0px;
     margin-inline-start: 0px;
 }
-/*Header*/
+                                                                                        /*Header*/
 .navbar
 {
     background: #171717;
@@ -172,7 +172,7 @@ img
     border-radius: 0;
 }
 
-/* escorte au cameroun*/
+                                                                                            /* escorte au cameroun*/
 .row
 {
     margin-right: -15px;
@@ -233,7 +233,7 @@ img
     border-radius: 0;
 }
 
-/* MESSAGER DE MODIFICATION DE PROFILE*/
+                                                                                /* MESSAGER DE MODIFICATION DE PROFILE*/
 
 .alert-success {
     color: #3c763d;
@@ -256,7 +256,7 @@ img
     filter: alpha(opacity=20);
     opacity: .2;
 }
-/*EDITE PROFILES !!! */
+                                                                                        /*EDITE PROFILES !!! */
 
 #edit-profile
 {
@@ -307,10 +307,10 @@ form {
     left: 100%;
     z-index: 1;
 }
-/*#edit-profile .steps li.active {
+#edit-profile .steps li.active {
     background: #3275df !important;
     color: #fff !important;
-}*/
+}
 #edit-profile .steps li.active:before {
     border-left-color: #3275df !important;
 }
@@ -482,7 +482,7 @@ a {
     line-height: 15px;
 }
 
-/* MES COORDONNEES */
+                                                                            /* MES COORDONNEES */
 
 #edit-profile .flex-row .box {
     height: 100%;
@@ -935,8 +935,24 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 12px;
     color: #000;
 }
+                                                                                /* CONNEXION*/
 
-/* BOUTTON D'ENREGISTREMENT*/
+.top-nav .usermessage
+{
+  margin-right: 15px;
+}
+.username
+{
+  color: #39e70d;
+}
+a
+{
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+}
+
+                                                        /* BOUTTON D'ENREGISTREMENT*/
 
 #edit-profile .save {
     font-size: 16px;
@@ -949,7 +965,7 @@ input[type="radio"], input[type="checkbox"] {
     text-align: center;
 }
 
-/*FOOTER*/
+                                                                    /*FOOTER*/
 .footer-top
 {
     background-color: #3275df;

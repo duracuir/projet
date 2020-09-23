@@ -1,7 +1,27 @@
 <?php
 session_start();
-	
+  // require('connexionBD.php');
+$connection = mysqli_connect("localhost", "root", "");
+$db = mysqli_select_db($connection, 'myminette');
+if(isset($_POST['Save'])) {
+    // $name = $_GET["username"];
+ 
+ $query = "UPDATE `membres` SET datenaiss = '$_POST[datenaiss]', slogan = '$_POST[slogan]', region = '$_POST[region]', nationality = $_POST[nationality], epilation = '$_POST[epilation]', piercing = '$_POST[piercing]', tattoo = '$_POST[tattoo]'  WHERE username = '$_SESSION[username]' ";
+  $query_run = mysqli_query($connection, $query);
+  if($query_run) {
+    echo '<script type="text/javascript"> alert("Vos données ont été enregistrées avec succès") </script>';
+  } else {
+    echo '<script type="text/javascript"> alert("Echecs enregistrement de vos donnees") </script>';
+  }
+}
+
+if(!isset($_SESSION['username'])) {
+    header('location:connexion.php');
+    exit;
+}
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +35,7 @@ session_start();
         <link rel="stylesheet" href="css/images.css">
         <script src="js/script.js"></script>
 </head>
- <body id="edit-profile">
+    <body id="edit-profile">
         <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <filter id="filter-shadow" x="0" y="0" width="100%" height="100%">
@@ -67,10 +87,10 @@ session_start();
                                     echo $_SESSION['username'];
                                 
                                 }
-                                     ?>
+                     ?>
                         </a>
                         </span>   
-                         <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
+                        <a class="btn btn-tertiary" href="contact.html">Nous Contacter</a>
                         <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
                     </div>
@@ -78,39 +98,69 @@ session_start();
                 </div>
 
                 </div>
-                </div>	
-	<main>
-		<section class="gallery-links">
-			<div class="col-xs-12">
-                 <div class="box">
-                     <h3 class="heading heading3 photo profile">Télécharger Photos</h3>
-                     <small>Postez une photo sensuelle et discrete qui transcrit vos atouts sexeulles et plus ...
+                </div>
+                <div class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="logo" href=""><img src="logo/main-logo.png" class="img-responsive" alt="Cameroun Escortes"></a>
+                    </div>
+                    <div id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="/index.html/">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minette/new/">Nouvelle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minette/girls/">Filles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minette/homme/">Hommes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minette/vip/">VIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minette/tours/">Tournées de Ville</a></li>
+                    
+            </div>
+                </div>
+                
+            </div>
+<div class="page-heading">
+            <div class="container">
+            <div class="row">
+                <div class="col-xs-4 back"></div>
+                <a href="index.html" class="btn btn-black">Retour</a>
+                <div class="col-xs-4">
+                    <h1 class="page-title">éditer profil de minette</h1>
+                </div>
+            </div>
+            </div>
+            </div>
+        </header>
+           <main class="container">
+        <form action id="bio_submit" class="submit_profile" method="post">        
+        <div class="row row-17">
+            
+            <div class="col-xs-6">
+                <div class="box">
+                     <h3 class="heading heading3 photo profile"> Photo de Profile </h3>
+                     <small>Postait une photo sensulle et discrete qui transcrit vos atouts sexsulles et plus ...
                       pas de photo pronographique. si non votre compte sérait <b>Bloqué<b>. </small>
                         <div class="row">
-                            <div class="col-xs-4 grp"></div>
-                                 <div class="col-xs-6 grp">
-                                     <div class="col-md-12 col-sm-12">
-                            				<?php
-                            				if(isset($_SESSION['username'])){
-                            				echo '<div class="gallery-upload">
-                            					<form action="include/gallery.upload.inc.php" method="POST" enctype="multipart/form-data">
-                            					<input type="text" name="filename" placeholder="usermane...">
-                            					<input type="file" name="file" >
-                            					<button type="submit" name="submit">VALIDER</button>		
-                            					</form>	
-                            				</div>';}
-                            			?>
-                            	 </div>
-			                  </div>
+                            <div class="col-xs-4 grp"> </div>
+                            <div class="col-xs-6 grp">
+                               <div class="col-md-12 col-sm-12">
+                                            <?php
+                                            if(isset($_SESSION['username'])){
+                                            echo '<div class="gallery-upload">
+                                                <form action="include/gallery.upload.inc.php" method="POST" enctype="multipart/form-data">
+                                                <input type="file" name="file" ><br>
+                                                <button type="submit" class="btn btn-tertiary" name="submit">VALIDER</button>        
+                                                </form> 
+                                            </div>';
+                                            }
+                                        ?>
+                                 </div>
                             </div>
                         </div>
-                      </div>
-                     </div>
                     </div>
-                  </div>
-		</section>
-	</main>
-<!--  <footer>
+                </div>       
+            </div>
+        </form>
+        </main>
+        <footer>
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -139,5 +189,5 @@ session_start();
         </div>
         <div class="copy"><small>© MINELUX 2020 Copyrigth All rigths reserved. V1.0 </small></div>
     </footer>
- --></body>
+</body>
 </html>

@@ -90,7 +90,7 @@ if(!isset($_SESSION['username'])) {
                      ?>
                         </a>
                         </span>   
-                        <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
+                        <a class="btn btn-tertiary" href="login2.php">Espace Privé</a>
                         <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
                     </div>

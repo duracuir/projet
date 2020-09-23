@@ -56,8 +56,9 @@
 
                     <div class="pull-left"></div>
                     <div class="pull-right">
-                        <div><p>Bienvenu:
-                        <a class="btn btn-primary" href="login.html">
+                        <span class="usermessage">
+                         Bienvenue:
+                        <a class="username" href="login.html">
                              <?php 
                        
                                 if(!isset($_SESSION['username'])){
@@ -68,10 +69,8 @@
                                 }
                      ?>
                         </a>
-
-                                </p>
-                            </div>
-                        <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
+                        </span>   
+                        <a class="btn btn-tertiary" href="login2.php">Espace Privé</a>
                         <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
             

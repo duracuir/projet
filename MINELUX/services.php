@@ -24,9 +24,10 @@
                     </ul>
 
                     <div class="pull-left"></div>
-                    <div class="pull-right">
-                         <div><p>Bienvenu:
-                        <a class="btn btn-primary" href="login.html">
+                   <div class="pull-right">
+                        <span class="usermessage">
+                         Bienvenue:
+                        <a class="username" href="login.html">
                              <?php 
                        
                                 if(!isset($_SESSION['username'])){
@@ -37,10 +38,8 @@
                                 }
                      ?>
                         </a>
-
-                                </p>
-                            </div>
-                        <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
+                        </span>   
+                        <a class="btn btn-tertiary" href="login2.php">Espace Privé</a>
                         <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
             
@@ -83,8 +82,10 @@
 
                 <!-- Theo mets une cmd php ici pour afficher ce msg seulement que le profile est enregistre ou enregistre apres modification-->
 
+<!--
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
                 Votre profil a été enregistré avec succès!            
+-->
             </div>
             <form action id="bio_submit" class="submit_profile" method="post">
              <ul class="steps">
