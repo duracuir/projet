@@ -71,11 +71,11 @@
                     <div id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item active"><a class="nav-link" href="/index.html/">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/new/">Nouvelle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/girls/">Filles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/homme/">Hommes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/vip/">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/tours/">Tournées de Ville</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minettes/new/">Nouvelle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minettes/girls/">Filles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minettes/homme/">Hommes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minettes/vip/">VIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/minettes/tours/">Tournées de Ville</a></li>
                     
             </div>
                 </div>
@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-xs-4 back"></div>
                 <div class="col-xs-4">
-                    <h1 class="page-title"> Escorts au Cameroun</h1>
+                    <h1 class="page-title"> minettes au Cameroun</h1>
                 </div>
                 <div class="col-xs-4">
                     <p class="views">Total des escotes disponible : . . .</p>
@@ -98,18 +98,28 @@
             <div class="city-list">
                 <div class="container clearfix">
                     <div class="row">
-                        <div class="one-6 city"><a title="escorts yaounde" href="/escorts/yaounde/">Yaounde</a></div>
-                        <div class="one-6 city"><a title="escorts douala" href="/escorts/douala/">Douala</a></div>
-                        <div class="one-6 city"><a title="escorts Bamenda" href="/escorts/Bamenda/">Bamenda</a></div>
-                        <div class="one-6 city"><a title="escorts Nkongsamba" href="/escorts/Nkongsamba/">Nkongsamba</a></div>
-                        <div class="one-6 city"><a title="escorts Bafouassam" href="/escorts/Bafouassam/">Bafouassam</a></div>
-                        <div class="one-6 city"><a title="escorts Buea" href="/escorts/buea/">Buea</a></div>
-                        <div class="one-6 city"><a title="escorts limbe" href="/escorts/limbe/">Limbe</a></div>
-                        <div class="one-6 city"><a title="escorts kribi" href="/escorts/kribi/">Kribi</a></div>
-                        <div class="one-6 city"><a title="escorts edea" href="/escorts/edea/">Edea</a></div>
-                        <div class="one-6 city"><a title="escorts dschang" href="/escorts/dschang/">Dschang</a></div>
-                        <div class="one-6 city"><a title="escorts ebolowa" href="/escorts/ebolowa/">Ebolowa</a></div>
-                        <div class="one-6 city"><a title="escorts ngaoundere" href="/escorts/ngaoundere/">Ngauondere</a></div>
+                        <div class="one-6 city"><a title="minette yaounde" href="/minette/yaounde/">Yaounde</a></div>
+                        <div class="one-6 city"><a title="minette douala" href="/minette/douala/">Douala</a></div>
+                        <div class="one-6 city"><a title="minette Bamenda" href="/minette/Bamenda/">Bamenda</a></div>
+                        <div class="one-6 city"><a title="minette Nkongsamba" href="/minette/Nkongsamba/">Nkongsamba</a></div>
+                        <div class="one-6 city"><a title="minette Bafouassam" href="/minette/Bafouassam/">Bafouassam</a></div>
+                        <div class="one-6 city"><a title="minette Buea" href="/minette/buea/">Buea</a></div>
+                        <div class="one-6 city"><a title="minette limbe" href="/minette/limbe/">Limbe</a></div>
+                        <div class="one-6 city"><a title="minette kribi" href="/minette/kribi/">Kribi</a></div>
+                        <div class="one-6 city"><a title="minette edea" href="/minette/edea/">Edea</a></div>
+                        <div class="one-6 city"><a title="minette dschang" href="/minette/dschang/">Dschang</a></div>
+                        <div class="one-6 city"><a title="minette ebolowa" href="/minette/ebolowa/">Ebolowa</a></div>
+                        <div class="one-6 city"><a title="minette ngaoundere" href="/minette/ngaoundere/">Ngaoundéré</a></div>
+                        <div class="one-6 city"><a title="minette Bertoua" href="/minette/Bertoua/">Bertoua</a></div>
+                        <div class="one-6 city"><a title="minette Loum" href="/minette/Loum/">Loum</a></div>
+                        <div class="one-6 city"><a title="minette Kumba" href="/minette/Kumba/">Kumba</a></div>
+                        <div class="one-6 city"><a title="minette Foumban" href="/minette/Foumban/">Foumban</a></div>
+                        <div class="one-6 city"><a title="minette Mbouda" href="/minette/Mbouda/">Mbouda</a></div>
+                        <div class="one-6 city"><a title="minette Tiko" href="/minette/Tiko/">Tiko</a></div>
+                        <div class="one-6 city"><a title="minette Bafang" href="/minette/Bafang/">Bafang</a></div>
+                        <div class="one-6 city"><a title="minette Sangmélima" href="/minette/Sangmélima/">Sangmélima</a></div>
+                        <div class="one-6 city"><a title="minette Mbanga" href="/minette/Mbanga/">Mbanga</a></div>
+                        <div class="one-6 city"><a title="minette Mélong" href="/minette/Mélong/">Mélong</a></div>
                     </div>
                     <div class="row collaspse" id="more-cities"></div>
                     <div id="home_city-select" class="pull-left"><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" title="choisissez une ville"><span class="filter-option pull-left">Choisissez une ville </span>
@@ -134,18 +144,18 @@
                 </div>
                     <select class="selectpicker" data-live-seach="true" tabindex="-5">
                         <option value>Choisissez une ville pour voir les minettes</option>
-                        <option value="/escorts/yaounde/">Yaounde</option>
-                        <option value="/escorts/Douala/">Douala</option>
-                        <option value="/escorts/Bamenda/">Bamenda</option>
-                        <option value="/escorts/Nkongsamba/">Nkongsamba</option>
-                        <option value="/escorts/Bafoussam/">Bafoussam</option>
-                        <option value="/escorts/Buea/">Buea</option>
-                        <option value="/escorts/limbe/">Limbe</option>
-                        <option value="/escorts/Kribi/">Kribi</option>
-                        <option value="/escorts/edea/">Edea</option>
-                        <option value="/escorts/edea/">Dschang</option>
-                        <option value="/escorts/edea/">Ebolowa</option>
-                        <option value="/escorts/edea/">Ngauondere</option>
+                        <option value="/minettes/yaounde/">Yaounde</option>
+                        <option value="/minettes/Douala/">Douala</option>
+                        <option value="/minettes/Bamenda/">Bamenda</option>
+                        <option value="/minettes/Nkongsamba/">Nkongsamba</option>
+                        <option value="/minettes/Bafoussam/">Bafoussam</option>
+                        <option value="/minettes/Buea/">Buea</option>
+                        <option value="/minettes/limbe/">Limbe</option>
+                        <option value="/minettes/Kribi/">Kribi</option>
+                        <option value="/minettes/edea/">Edea</option>
+                        <option value="/minettes/edea/">Dschang</option>
+                        <option value="/minettes/edea/">Ebolowa</option>
+                        <option value="/minettes/edea/">Ngaoundére</option>
                     </select>
                 </div>
                 </div>

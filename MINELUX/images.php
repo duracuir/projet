@@ -12,7 +12,7 @@ session_start();
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/Biographie.css">
+        <link rel="stylesheet" href="css/images.css">
         <script src="js/script.js"></script>
 </head>
  <body id="edit-profile">
@@ -67,11 +67,10 @@ session_start();
                                     echo $_SESSION['username'];
                                 
                                 }
-                     ?>
-                     
+                                     ?>
                         </a>
                         </span>   
-                        <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
+                         <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
                         <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
                     </div>
@@ -88,32 +87,57 @@ session_start();
                      <small>Postez une photo sensuelle et discrete qui transcrit vos atouts sexeulles et plus ...
                       pas de photo pronographique. si non votre compte sérait <b>Bloqué<b>. </small>
                         <div class="row">
-                            <div class="col-xs-4 grp">
-                               
-                            </div>
-                            <div class="col-xs-6 grp">
-                                <div class="col-md-12 col-sm-12">
-				<?php
-				if(isset($_SESSION['username'])){
-				echo '<div class="gallery-upload">
-					<form action="include/gallery.upload.inc.php" method="POST" enctype="multipart/form-data">
-					<input type="text" name="filename" placeholder="Nom photo...">
-					<input type="text" name="filetitle" placeholder="Titre...">
-					<input type="text" name="filedesc" placeholder="Description...">
-					<input type="file" name="file" >
-					<button type="submit" name="submit">VALIDER</button>		
-					</form>	
-				</div>';}
-			?>
-			</div>
-			 </div>
+                            <div class="col-xs-4 grp"></div>
+                                 <div class="col-xs-6 grp">
+                                     <div class="col-md-12 col-sm-12">
+                            				<?php
+                            				if(isset($_SESSION['username'])){
+                            				echo '<div class="gallery-upload">
+                            					<form action="include/gallery.upload.inc.php" method="POST" enctype="multipart/form-data">
+                            					<input type="text" name="filename" placeholder="usermane...">
+                            					<input type="file" name="file" >
+                            					<button type="submit" name="submit">VALIDER</button>		
+                            					</form>	
+                            				</div>';}
+                            			?>
+                            	 </div>
+			                  </div>
                             </div>
                         </div>
-                 </div>
-             </div>
+                      </div>
+                     </div>
                     </div>
                   </div>
 		</section>
 	</main>
-</body>
+<!--  <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <svg viewBox="0 0 64 64">
+                        <use xlink:href="#icon-real-photos"></use>
+                        </svg>
+                        <h4 class="line">Photo des Minettes réelles</h4>
+                    </div>
+                    <div class="col-xs-4">
+                        <svg viewBox="0 0 64 64">
+                        <use xlink:href="#icon-discretion-guaranteed"></use>
+                        </svg>
+                        <h4 class="line">Discretion assurée</h4>
+                    </div>
+                    <div>
+                        <div class="col-xs-4">
+                            <svg viewBox="0 0 64 64">
+                            <use xlink:href="#icon-trusted-website"></use>
+                            </svg>
+                            <h4 class="line">Minette girl Cameroun</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy"><small>© MINELUX 2020 Copyrigth All rigths reserved. V1.0 </small></div>
+    </footer>
+ --></body>
 </html>

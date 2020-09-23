@@ -67,7 +67,7 @@ if(!isset($_SESSION['username'])){
 
                     <div class="pull-left"></div>
                     <div class="pull-right">
-                           <span class="usermessage">
+<span class="usermessage">
                          Bienvenue:
                         <a class="username" href="login.html">
                              <?php 
@@ -81,11 +81,8 @@ if(!isset($_SESSION['username'])){
                      ?>
                      
                         </a>
-                        </span> 
-
-                        
-                            </div>
-                        <a class="btn btn-tertiary" href="signup.html">Private area</a>
+                        </span>   
+                        <a class="btn btn-tertiary" href="signup.html">Espace Privé</a>
                         <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
             

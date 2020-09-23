@@ -105,32 +105,32 @@ if(isset($_POST['forminscription'])) {
                        $statement = $pdo -> prepare( "INSERT INTO `membres` (username, password, phone, email)
                              VALUES ('$username', '$password', '$phone', '$email')");
                         $statement->execute(['username'=> $username, 'password' => $password, 'phone'=> $phone, 'email'=> $email]);
-                            echo "<p style='color: green; background-color: lightgreen;'>Votre compte a été créé, veuillez vous connecter</p>";
+                            echo "<p style='color: green; text-align: center;'>Votre compte a été créé, veuillez vous connecter</p>";
                     } else {
-                      echo "<p style='color: red;'>Les adresses mails ne correspondent pas</p>";
+                      echo "<p style='color: red; text-align: center;'>Les adresses mails ne correspondent pas</p>";
                     }
                 } else {
-                  echo "<p style='color: red;'>Les mots de passe ne correspondent pas</p>";
+                  echo "<p style='color: red; text-align: center;'>Les mots de passe ne correspondent pas</p>";
                 }
             } else {
-              echo "<p style='color: red;'>Le mot de passe est trop court. 6 caracteres minimum</p>";
+              echo "<p style='color: red;' text-align: center;>Le mot de passe est trop court. 6 caracteres minimum</p>";
             }
         } else {
-          echo "<p style='color: red;'>Le nom d'utilisateur est trop court! minimum requis 5 caracteres</p>";
+          echo "<p style='color: red; text-align: center;'>Le nom d'utilisateur est trop court! minimum requis 5 caracteres</p>";
           
 
         }
     } else {
-      echo "<p style='color: red;'>Veuillez remplir tous les champs!</p>";
+      echo "<p style='color: red; text-align: center;'>Veuillez remplir tous les champs!</p>";
     }
   } else {
-      echo "<p style='color: red;'>Ce compte existe deja</p>";
+      echo "<p style='color: red; text-align: center;'>Ce compte existe deja</p>";
 } 
 }
 
 ?>
 
-                        <p class="attention">Veuillez remplir le formulaire suivant et cliquez "S'enregistrer"</p>
+                        <p class="attention" style="text-align: center;">Veuillez remplir le formulaire suivant et cliquez "S'inscrire"</p>
                             <div class="INSCRIPTION">
                             <input type="hidden" id="user_type" name="user_type" value="2" placeholder="type de compte">
                             <input type="text" id="username" name="username" placeholder="Nom utilisateur" /><br>
