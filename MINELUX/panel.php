@@ -69,7 +69,7 @@ if(!isset($_SESSION['username'])){
                     <div class="pull-right">
 <span class="usermessage">
                          Bienvenue:
-                        <a class="username" href="login.html">
+                        <a class="username" href="login2.php">
                              <?php 
                        
                                 if(!isset($_SESSION['username'])){
@@ -82,7 +82,7 @@ if(!isset($_SESSION['username'])){
                      
                         </a>
                         </span>   
-                        <a class="btn btn-tertiary" href="signup.html">Espace Privé</a>
+                        <a class="btn btn-tertiary" href="login2.php">Espace Privé</a>
                         <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
             
@@ -97,13 +97,12 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div id="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/new/">Nouvelle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/girls/">Filles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/homme/">Hommes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/vip/">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/tours/">Tournées de Ville</a></li>
-                    
+                     <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nouvelles.html">Nouvelle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="toursdeville.html/">Tournées de Ville</a></li>
             </div>
                 </div>
                 
