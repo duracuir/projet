@@ -1,0 +1,555 @@
+                                                    /*GENERAL*/
+body
+{
+    font-family: 'Open sans' , sans-serif;
+    font-size: 16px;
+    /*background: #f7f7f7;*/
+}
+h1, h2, h3, h4, h5, h6, ul, p
+{
+    margin: 0;
+}
+p
+{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-start: 0px;
+}
+                                                    /*Header*/
+.navbar
+{
+    background: #171717;
+    font-size: 12px;
+    float: none;
+    font-size: 14px;
+    padding: 4px 0;
+
+}
+.top-nav
+{
+    background: #000;
+    color: #919191;
+    font-size: 14px;
+    padding: 14px 0;
+}
+.container
+{
+    position: relative;
+    width: 1200px;
+    max-height: none !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-right: auto;
+    padding-left: auto;
+}
+*
+{
+    box-sizing: border-box;
+}
+div
+{
+    display: block;
+}
+.pull-left
+{
+    float: left !important;
+}
+.pull-right
+{
+     float: right !important;
+}
+.top-nav .btn-primary
+{
+    background: #286092;
+}
+.top-nav .btn
+{
+    font-size: 11px;
+    padding: 8px 20px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 16px;
+}
+.btn-tertiary
+{
+    background: #3275df;
+    color: #fff;
+}
+.btn-secondary
+{
+    background: #3a3a3a;
+    color: #fff;
+}
+
+.btn
+{
+    box-shadow: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    transition: all 200ms ease;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+}
+.container
+{
+    position: relative;
+    width: 1200px;
+    max-width: none !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-header
+{
+    float: left;
+}
+.navbar .logo img
+{
+    padding: 20px 0;
+    height: 100px;
+}
+.img-responsive
+{
+    display: block;
+    max-width: 100%;
+}
+img
+{
+    vertical-align: middle;
+    border: 0;
+}
+.navbar-nav> li
+{
+    float: left;
+}
+.nav>li 
+{
+    position: relative;
+    display: block;
+}
+.navbar .nav-item:not(:last-child) .nav-link
+{
+    margin-right: 15px !important;
+}
+.navbar .nav-item.active .nav-link
+{
+    background-color: transparent !important;
+    position: relative;
+}
+.navbar .nav-link
+{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    padding: 0 !important;
+}
+#navbar
+{
+    float: right;
+    position: relative;
+    top: 65px;
+    left: -38px;
+}
+.navbar-default
+{
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+    border-radius: 0;
+}
+
+                                                                /* escorte au cameroun*/
+.row
+{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-xs-4 
+{
+    width: 33.33333333%;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9,.col-xs-10, .col-xs-11, .col-xs-12
+{
+    padding: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+.page-heading .page-title
+{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12.5px 0;
+    margin: 0;
+}
+.page-heading .date, .page-heading .views
+{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 0;
+    text-align: right;
+    font-weight: 400;
+}
+.page-heading
+{
+    background: #3275df;
+    position: relative;
+    top: -20px;
+    z-index: 1;
+}
+.page-heading .black 
+{
+    padding: 8px 17.5px;
+    font-size: 11px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.btn-black
+{
+    background: #000;
+    color: #fff;
+    position: relative;
+    right: 800px;
+   top: 3.5px;
+    border-radius: 0;
+}
+
+                                                                        /*reinitialiser le mot de passe */
+.col-xs-offset-2 {
+    margin-left: 16.66666667%;
+}
+.col-xs-8 {
+    width: 66.66666667%;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+#sign_up_in {
+    color: #696969;
+    font-size: 14px;
+}
+#sign_up_in #sign-in, #sign_up_in #sign-up {
+    padding: 70px 0;
+    margin-top: 44px;
+    margin-bottom: 52px;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: 0 0 21px 0 rgba(88, 88, 88, 0.1);
+    box-shadow: 0 0 21px 0 rgba(88, 88, 88, 0.1);
+}
+#sign_up_in #sign-in {
+    background: url(../fond/corps-dame.png);
+}
+.col-xs-offset-6 {
+    margin-left: 50%;
+}
+.col-xs-6 {
+    width: 50%;
+}
+#sign_up_in #sign-in p.attention, #sign_up_in #sign-up p.attention {
+    margin-bottom: 15px;
+}
+#sign_up_in #sign-in p, #sign_up_in #sign-up p {
+    margin: 0;
+    font-size: 13px;
+}
+#sign_up_in #sign-in .input, #sign_up_in #sign-up .input {
+    position: relative;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+#sign_up_in #sign-in input:not([type="checkbox"]):not([type="submit"]), #sign_up_in #sign-in .bootstrap-select button, #sign_up_in #sign-up input:not([type="checkbox"]):not([type="submit"]), #sign_up_in #sign-up .bootstrap-select button {
+    display: block;
+    border: 1px solid #acacac;
+    border-radius: 0;
+    color: #696969;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    text-transform: none;
+    height: 46px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 8;
+    background: #fff;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+#sign_up_in #sign-in input:not([type="checkbox"]):not([type="submit"]), #sign_up_in #sign-in .bootstrap-select button, #sign_up_in #sign-up input:not([type="checkbox"]):not([type="submit"]), #sign_up_in #sign-up .bootstrap-select button {
+    display: block;
+    border: 1px solid #acacac;
+    border-radius: 0;
+    color: #696969;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    text-transform: none;
+    height: 46px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 8;
+    background: #fff;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+#sign_up_in #sign-in .input svg, #sign_up_in #sign-up .input svg {
+    fill: #000;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9;
+    pointer-events: none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+
+element.style {
+    z-index: 11 !important;
+}
+injected stylesheet
+kpm-button._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+injected stylesheet
+kpm-button._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l, kpm-button._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l * {
+    border-collapse: initial;
+    bottom: initial;
+    box-shadow: none;
+    box-sizing: border-box;
+    caption-side: initial;
+    clear: initial;
+    clip: initial;
+    color: initial;
+    cursor: inherit;
+    direction: inherit;
+    display: initial;
+    empty-cells: initial;
+    float: none;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    line-height: initial;
+    max-height: initial;
+    max-width: initial;
+    min-width: initial;
+    orphans: initial;
+    pointer-events: initial;
+    position: initial;
+    quotes: initial;
+    table-layout: initial;
+    text-align: initial;
+    text-indent: initial;
+    text-transform: initial;
+    unicode-bidi: initial;
+    vertical-align: initial;
+    visibility: inherit;
+    white-space: initial;
+    widows: initial;
+    word-spacing: initial;
+    z-index: initial;
+    height: auto;
+    width: auto;
+    animation: 0s ease 0s 1 normal none running none;
+    background: initial;
+    border-spacing: initial;
+    border: initial;
+    border-radius: initial;
+    font-variant: inherit;
+    list-style: initial;
+    margin: initial;
+    outline: initial;
+    overflow: initial;
+    padding: initial;
+    page-break-after: initial;
+    page-break-before: initial;
+    page-break-inside: initial;
+    text-decoration: initial;
+    transition: none 0s ease 0s;
+}
+element.style {
+    width: 20px !important;
+    height: 24px !important;
+    top: -35px !important;
+    left: 318.656px !important;
+}
+injected stylesheet
+kpm-button._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l ._12GLdmNfqjBzgAQBymfRrk {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 100ms ease-in 0s;
+}
+element.style {
+    top: 0px !important;
+    bottom: 0px !important;
+    left: -2px !important;
+    right: -2px !important;
+}
+#sign_up_in #sign-in .input svg, #sign_up_in #sign-up .input svg {
+    fill: #000;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9;
+    pointer-events: none;
+}
+element.style {
+    width: 12px !important;
+    height: 24px !important;
+    top: -35px !important;
+    left: 318.656px !important;
+}
+#sign_up_in #sign-in .input svg, #sign_up_in #sign-up .input svg {
+    fill: #000;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9;
+    pointer-events: none;
+}
+path[Attributes Style] {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    d: path("M 6 7.46487 C 7.1956 6.77325 8 5.48056 8 4 C 8 1.79086 6.20914 0 4 0 C 1.79086 0 0 1.79086 0 4 C 0 5.48056 0.804397 6.77325 2 7.46487 V 9 H 3 V 10 H 2 V 12 H 3 V 13 H 2 V 14.5 L 4 16 L 6 14.5 V 7.46487 Z M 5 3 C 5 3.55228 4.55229 4 4 4 C 3.44772 4 3 3.55228 3 3 C 3 2.44772 3.44772 2 4 2 C 4.55229 2 5 2.44772 5 3 Z M 4 8 H 5 V 14 H 4 V 8 Z");
+}
+injected stylesheet
+kpm-button._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l._1mUok1yqu_fHkbNOXVoU6l ._2WQbmZpFI_2_k72D9o87Hq._2p2h7gYS-bpObPoQxR7lvo path {
+    fill: rgb(159, 159, 159);
+}
+#sign_up_in #sign-in .btn, #sign_up_in #sign-up .btn {
+    font-size: 14px;
+    padding: 14px 55px;
+    margin-top: 16px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.btn-primary {
+    background: #3275df;
+    color: #fff;
+}
+#sign_up_in #sign-in input:not([type="checkbox"]):not([type="submit"]), #sign_up_in #sign-in .bootstrap-select button, #sign_up_in #sign-up input:not([type="checkbox"]):not([type="submit"]), #sign_up_in #sign-up .bootstrap-select button {
+    display: block;
+    border: 1px solid #acacac;
+    border-radius: 0;
+    color: #696969;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    text-transform: none;
+    height: 46px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 8;
+    background: #fff;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+                                                                            /*FOOTER*/
+
+.footer-top
+{
+    background-color: #3275df;
+    margin-bottom: 10px;
+    padding: 2px 0;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.line
+{
+    position: relative;
+    bottom: 15px;
+}
+footer {
+    background: #000;
+    margin-top: 93px;
+    color: #7a7a7a;
+    padding-bottom: 10px;
+}
+.copy
+{
+    text-align: center;
+    font-size: 100;
+    color: #fff;
+
+}
+                                                                            /*icon svg*/
+.footer-top svg {
+    fill: #fff;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+.col-xs-4 {
+    width: 33.33333333%;
+}
+.footer-top h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    vertical-align: text-bottom;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}

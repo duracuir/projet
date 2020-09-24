@@ -35,6 +35,11 @@ if (isset($_GET["username"])) {
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/profilesminette.css">
         <script src="js/script.js"></script>
+        <script type="application/javascript">
+                var user_info = { 'logged_in':true, 'user_id': 17995, 'user_type': 2 };
+                var signon_link = "/login2.php/";
+        var env = 'production';
+                    </script>
 </head>
     <body id="profile">
         <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -51,10 +56,6 @@ if (isset($_GET["username"])) {
             </feMerge>
         </filter>
     </defs>
-    
-    
-    
-    
     <g id="icon-real-photos">
         <polygon points="16.67,4 13.85,20 16.89,20 19.1,7.48 56.52,14.07 52.18,38.69 48,37.96 48,50.14 53.05,51.03 60,11.64"></polygon>
         <path d="M4,20v40h44V20H4z M45,48H7V23h38V48z M41,45H11l5-7l5,4l5-7l5,5l5-8L41,45z M15,28c-1.66,0-3,1.34-3,3c0,1.66,1.34,3,3,3 c1.66,0,3-1.34,3-3C18,29.34,16.66,28,15,28z"></path>
@@ -145,69 +146,45 @@ if (isset($_GET["username"])) {
                                      echo '<a class="pitem" data-exthumbimage="chemin d la photo.jpeg" href="galleryphoto.php?username='.$username.'">
                                         <div class="bibi">
                                             
-                                        <div style="background-image: url(images/gallery/'.$results[0]->photos.');"></div>'
+                                        <div style="background-image: url(images/gallery/'.$results[0]->photos.');">
+                                        </div>  
+                                        </a>'
+                                        
                                     ?>
-   
-                                        </div>
-                                            <!-- <img class="img-full" src="fond/corps-dame.png" alt="gaby - girls escort paris"> -->
-
-                                            <div class="badges">
-                                            <div class="top-left">
-                                                <svg class="ribbon" viewBox="0 0 132 132">
-                                                        <use xlink:href="#ribbon-diamond"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="top-right">
-                                                <div class="badge-md">
-                                                    <svg viewBox="0 0 64 64">
-                                                        <use xlink:href="#badge-vip"></use>
-                                                    </svg>
+                                                
                                                 </div>
                                             </div>
-                                            <div class="bottom-left">
-                                                <div class="badge-md">
-                                                    <svg viewBox="0 0 64 64">
-                                                        <use xlink:href="#badge-diamond"></use>
-                                                    </svg>
-                                                </div>
-                                                    </div>
-                                                        </div>
-                                                             <div class="top-right">
-                                                                <div class="badge-md">
-                                                                 <svg viewBox="0 0 64 64">
-                                                                <use xlink:href="#badge-vip"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                <div class="bottom-left">
-                                                    
-                                                </div>
-                                            </div>
-                                         </a>
+                                         
+                                <!-- Photos -->
+                        <div class="col-xs-4"> 
+                            <!-- mettre le code php pour l affichage des photos ici -->
+                            <div class="col-xs-4" wfd-id="172">
+                                <a class="pitem" data-exthumbimage="lien de la photo.jpeg" href="lien de la page gallery.jpeg">
+                                        <img class="img-full" src="source de la photo.jpeg" alt="detail de la photo">
+                                </a> <!-- introduit ces information sans changer les class css je vais gere la suite -->
+                                
                                     </div>
                                  
-                        <!-- Photos -->
-                        <div class="col-xs-4">
-                            <a class="pitem" data-exthumbimage="//pic1.minettee.com/images/thumb_profile/63/0/arg_0x0/55c4c2d1feef57004df6dd189eabc191.jpeg" href="//pic1.minettee.com/images/orig/63/0/arg_0x0/55c4c2d1feef57004df6dd189eabc191.jpeg">
-                        <img class="img-full" src="//pic1.minettee.com/images/thumb_profile/63/0/arg_0x0/55c4c2d1feef57004df6dd189eabc191.jpeg" alt="Angelina - Girl minette Paris">
-                        </a>
-                         
-
-                    </div>  
+                        
+                           </div>
+                        </div>  
 								</div>
-                            </div>
-                                <!-- Boutton pour signaler une annonce -->
+                         <!-- Boutton pour signaler une annonce -->
 
 						
-                <div class="buttons">
-                    <div class="row row-sm">
-                        <div class="col-xs-12"><a href="javascript:void(0);" data-action="problem" class="btn btn-black btn-block add_report"><styles> background: red;</styles>Signaler l'annonce</a>
+                        <div class="buttons">
+                                <div class="row row-sm">
+                                        <div class="col-xs-12"><a href="javascript:void(0);" data-action="problem" class="btn btn-black btn-block add_report"><styles> background: red;</styles>Signaler l'annonce</a>
+                                        </div>
+                                </div>
                         </div>
-                    </div>
-                </div>
+                            </div>
+
+                               
                 
-<!-- INFORMATION DETAILLES SUR LA MINETTE-->
-</div>                     
+            <!-- INFORMATION DETAILLES SUR LA MINETTE-->
+            </div>    
+                
             <div class="col-xs-8">
                 <div class="box info">
                     <div class="row">
@@ -218,9 +195,13 @@ if (isset($_GET["username"])) {
                                 <span class="age"><?php echo $results[0]->ville;?></span>
                             </h2>
                         </div>
+                        
+<!--                        Boutton pour voter -->
+                        
                         <div class="col-xs-4 clearfix gotm_div">
-                                <a href="javascript:void(0);" class="btn btn-primary cta">Votez pour moi !</a>
-                            </div>
+                                <a href="/" class="btn btn-primary cta">Votez pour moi !</a>
+                        </div>
+                        
                         <div class="col-xs-12">
                             <h3 class="box-title">Biographie</h3>
                         </div>
@@ -250,23 +231,75 @@ if (isset($_GET["username"])) {
                             
                             <div class="col-xs-6 label-ct">Disponible pour</div>
                             <div class="col-xs-6">
-                                <span class="label-ct">Reçoit :</span>..............<br>
-                                <span class="label-ct">Déplace :</span>...........<br>
+                                <span class="label-ct">Reçoit :</span><br>
+                                <span class="label-ct">Déplace :</span><br>
                             </div>
                         </div>
                         </div>
                      </div>
                     </div>              
                 <div class="box about">
+                    
                     <h3 class="box-title half">A propos de moi</h3>
-                    <p><?php echo $results[0]->apropos;?></p>
-                    <p><br></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p><br></p>
-                    <p></p>                
+                    <p>
+                        <span>
+                            <?php echo $results[0]->apropos;?>
+                        </span>
+                    </p>
                 </div>
+                
+                <div class="row row-sm prices-contact" wfd-id="74">
+                    <div class="col-xs-6" wfd-id="75">
+                        <div class="box contact-info" wfd-id="76">
+                            <h3 class="box-title">Coordonnées</h3>
+                            <div class="row row-sm" wfd-id="77">
+                                <div class="col-xs-6 label-ct" wfd-id="89">Ville de base:</div>
+                                <div class="col-xs-6" wfd-id="88">
+                                    <a href="/" class="bold" title="/">.. </a>
+                                </div>
+                                <div class="col-xs-6 label-ct" wfd-id="87">Disponible en:</div>
+                                    <div class="col-xs-6" wfd-id="86">
+                                      <a href="/" class="bold" title="/">...</a> <br>
+                                      <a href="/" class="bold" title="/">.. </a> <br>
+                                  </div>
+                                <div class="col-xs-6 label-ct" wfd-id="85">Téléphone:</div>
+                                <div class="col-xs-6 label-ct" wfd-id="82">
+                                    <div class="phone" wfd-id="83">
+                                        +237123456789<div class="phone_btn phone_btn_small" wfd-id="84">
+                                            <a href="javascript:void(0);" onclick="showNumber(9302);">Voir le numero</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="col-xs-6 label-ct" wfd-id="81">Consignes pour le téléphone:
+                                </div>
+                                <div class="col-xs-6" wfd-id="80">...
+                                </div>
+                                <div class="col-xs-6 label-ct" wfd-id="79">Apps Available:
+                                </div>
+                                <div class="col-xs-6" wfd-id="78">...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--  Afficher les Services offertent -->
+
+                <div class="box service-offered">
+                        <h3 class="box-title half">Services</h3>
+                        <div class="row">
+                            <ul class="col-xs-4">                                
+                                
+                            </ul>                                                            
+                            <ul class="col-xs-4">                   
+                                
+                            </ul>    
+
+                            <ul class="col-xs-4">                               
+                               
+                            </ul>
+                        </div>
+                    </div>
+                
                 <div class="col-xs-6">
                             <div class="box prices">
                                 <h3 class="box-title">Mon Cadeau</h3>
@@ -284,73 +317,46 @@ if (isset($_GET["username"])) {
                             </div>
                         </div>
                 <?php }?>
-</form>
-                    <div class="col-xs-6">
-                        <div class="box contact-info">
-                            <h3 class="box-title">Coordonnées</h3>
-                            <div class="row row-sm">
-                                <div class="col-xs-6 label-ct">Ville de base:</div>
-                                <div class="col-xs-6">
-                                    <a href="/" class="bold" title="">:</a>
-                                </div>
-                                <div class="col-xs-6 label-ct">Téléphone:</div>
-                                <div class="col-xs-6 label-ct">
-                                    
-
-                                    <div class="phone">691811804<div class="phone_btn phone_btn_small">
-                                    <a href="javascript:void(0);" onclick="showNumber(7810);">Voir le numéro</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                 <div class="col-xs-6 label-ct">Consignes pour le téléphone:</div>
-                                 <div class="col-xs-6">:</div>
-                                 <div class="col-xs-6 label-ct">Apps Available:</div>
-                                 <div class="col-xs-6"></div>
-                            </div>
-                        </div>
+            </form>   
                     </div>
+                           <!-- Commentaires -->
 
-                <div class="box service-offered">
-                        <h3 class="box-title half">Services</h3>
-                        <div class="row">
-                            <ul class="col-xs-4">                                
-                                <li>Jeux avec gode/sextoys</li>
-                                <li>Massage sensuel intégral</li>
-                                <li>Massage de la prostate</li>
-                                <li>Tantrique</li>
-                                <li>BDSM</li>
-                                <li>Bondage</li>
-                            </ul>                                                            
-                            <ul class="col-xs-4">                   
-                                <li>Fétischisme</li>
-                                <li>Fétischisme des pieds</li>
-                                <li>Douche dorée (donneur)</li>
-                                <li>Cuir / latex / PVC</li>
-                                <li>Maîtresse (hard)</li>
-                                <li>Maîtresse (soft)</li>
-                            </ul>                           
-                            <ul class="col-xs-4">                               
-                                <li>Jeux de rôles et fantaisies</li>
-                                <li>Fessée (donneur)</li>
-                                <li>Gode-ceinture</li>
-                                <li>Massage érotique</li>
-                            </ul>
-                        </div>
-                    </div>
-                           
+<!--
                     <div class="box comments">
+                        
                         <div class="clearfix">
                             <h3 class="comments-title pull-left">Commentaires <span class="comm-num">0</span></h3>
                         </div>
-                             <p>Pas de commentaires jusqu'a présent</p>
+                             <p></p>
                         </div>
-
+-->
+                                    </div>
+                
+                                </div>
+                
+                            </div>
+            
+                        </div>
+<!--
+    <div class="box comments" wfd-id="65">
+                        <div class="clearfix" wfd-id="66">
+                            <h3 class="comments-title pull-left">Commentaires <span class="comm-num" wfd-id="67">0</span></h3>
+                                                            <a href="javascript:void(0);" class="btn btn-primary pull-right submit-comment" data-toggle="modal" data-target="#modal-comment">Ajouter un commentaire</a>
+                                                    </div>
+                                                    <p>Pas de commentaires jusqu'a présent</p>
+                                            </div>
+-->
+                    </div>
+        
+                </div>
+    
                         <div class="fixed-ph-no">
+                            
     <div class="container">
         <div class="row">
             <div class="col-xs-6">
                 <div class="phone">
-                    691811804<div class="phone_btn">
+                    <div class="phone_btn">
                         <a href="javascript:void(0);" onclick="showNumber(8787);">Voir le numéro</a>
                     </div>
                 </div>
@@ -360,23 +366,23 @@ if (isset($_GET["username"])) {
                         <span>Ajouter au favoris</span>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
                             <path d="M4,23c0-9.132,7.183-17,16-17c4.641,0,8.985,1.945,12,5.5C35.016,7.941,39.359,6,44,6c8.815,0,16,7.868,16,17 c0,11.949-28,35-28,35S4,34.697,4,23z"></path>
-                        </svg>
-                    </a>
+                                    </svg>
+                                </a>
                             </div>
-        </div>
-    </div>
-</div>
-                                                  <script type="text/javascript">
-                                                        var minette_id = '';
-                                                        var add_fav = '/minette/ajax_add_fav/';
-                                                        var del_fav = '/minette/ajax_del_fav/';
-                                                        var translate = { 'add_fav': 'Ajouter au favoris', 'del_fav': 'Effacer de votre liste de Favoris' , 'comment_added': 'Votre commentaire a été ajouté avec succès. Vous le verrez après que nos modérateurs le confirment.' };
-                                                        var contact_me = '/minette/ajax_pm/';
-                                                        var gotm_link = '/minette/gotm_vote/';
-                                                        var get_phone = '/minette/get_phone/';
-                                                        var add_report = '/minette/add_report/';
-                                                        var add_comment = '/minette/add_comment/';
-                                                    </script>
+                        </div>
+                    </div>
+                </div>
+                        <script type="text/javascript">
+                                            var escort_id = '9302';
+                                            var add_fav = '/escort/ajax_add_fav/';
+                                            var del_fav = '/escort/ajax_del_fav/';
+                                            var translate = { 'add_fav': 'Ajouter au favoris', 'del_fav': 'Effacer de votre liste de Favoris' , 'comment_added': 'Votre commentaire a été ajouté avec succès. Vous le verrez après que nos modérateurs le confirment.' };
+                                            var contact_me = '/escort/ajax_pm/';
+                                            var gotm_link = '/escort/gotm_vote/';
+                                            var get_phone = '/escort/get_phone/';
+                                            var add_report = '/escort/add_report/';
+                                            var add_comment = '/escort/add_comment/';   
+                                        </script>
 </main>
        <footer>
         <div class="footer-top">

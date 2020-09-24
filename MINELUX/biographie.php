@@ -111,7 +111,7 @@ if(!isset($_SESSION['username'])) {
                     <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
                     <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
                     <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="toursdeville.html/">Tournées de Ville</a></li>
+                    <li class="nav-item"><a class="nav-link" href="toursdeville.html">Tournées de Ville</a></li>
                     
             </div>
                 </div>

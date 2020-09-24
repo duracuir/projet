@@ -67,7 +67,7 @@ if(!isset($_SESSION['username'])){
 
                     <div class="pull-left"></div>
                     <div class="pull-right">
-<span class="usermessage">
+                      <span class="usermessage">
                          Bienvenue:
                         <a class="username" href="login2.php">
                              <?php 

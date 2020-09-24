@@ -4,6 +4,7 @@ body
     font-family: 'Open sans' , sans-serif;
     font-size: 16px;
     /*color: #333;*/
+     background: #f7f7f7;
 
 }
 
@@ -25,6 +26,9 @@ p
     margin-inline-start: 0px;
 }
 /*Header*/
+header {
+    margin-bottom: 20px;
+}
 .navbar
 {
     background: #171717;
@@ -235,10 +239,18 @@ img
     border-radius: 0;
 }
 
-/* MESSAGER DE MODIFICATION DE PROFILE*/
+.page-heading .date, .page-heading .views {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat';
+    padding: 10px 0;
+    text-align: right;
+    font-weight: 400;
+}
+/* MESSAGER DE NOTIFICATION DE PROFILE*/
 
 
-.alert-success {
+/*.alert-success {
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
@@ -258,10 +270,10 @@ img
     text-shadow: 0 1px 0 #fff;
     filter: alpha(opacity=20);
     opacity: .2;
-}
+}*/
 /*PROFILESMINETTE !!! */
 
-#profile
+/*#profile
 {
     background: #ebebeb;
 }
@@ -271,7 +283,7 @@ img
 }
 main{
     padding-top: 20px;
-}
+}*/
 .breadcrumb {
     margin: 0;
     list-style: none;
@@ -292,13 +304,31 @@ main{
     padding-left: 8px;
     content: ">";
 }
-/*cote gauche*/
-
+.container {
+    position: relative;
+}
+.container {
+    width: 1200px;
+    max-width: none !important;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+main {
+    padding-top: 20px;
+}
+main> .row {
+    margin-left: -7px;
+    margin-right: -7px;
+}
 .content.full {
     width: 100%;
 }
 .content {
-    /*width: 80%;*/
+    width: 80%;
     float: left;
     display: block;
     padding: 0 7px;
@@ -309,9 +339,9 @@ main{
 #profile .content .row> [class*="col-"] {
     padding: 10px;
 }
-.col-xs-4 {
-    width: 33.33333333%;
-}
+
+                                                                            /*cote gauche*/
+
 #profile .slogan {
     font-size: 14px;
     text-align: center;
@@ -350,8 +380,39 @@ b, strong {
 .col-xs-12 {
     width: 100%;
 }
-#profile .profile-picture .img .pitem .bibi {
-    /*position: relative;*/
+#profile .profile-picture .img {
+    position: relative;
+}
+
+
+                                                                        /* affichage des photos */
+
+
+#profile .pictures:not(:last-child), #profile .buttons:not(:last-child), #profile .available_chat:not(:last-child), #profile .city-tours:not(:last-child), #profile .box:not(:last-child) {
+    margin-bottom: 20px;
+}
+#profile .content .row-sm {
+    margin: -4px;
+}
+#profile .content .row-sm> [class*="col-"], #profile .content .row-sm> .one-6, #profile .content .row-sm> .one-7, #profile .content .row-sm> .five-6 {
+    padding: 4px;
+}
+#profile .profile-picture .img {
+    position: relative;
+}
+.img-full {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+#profile .profile-picture .img .pitem {
+    position: relative;
     width: 100%;
     height: 235px;
     background-position: center;
@@ -373,9 +434,7 @@ a {
 #profile .content .row-sm> [class*="col-"], #profile .content .row-sm> .one-6, #profile .content .row-sm> .one-7, #profile .content .row-sm> .five-6 {
     padding: 4px;
 }
-#profile .content .row-sm> [class*="col-"], #profile .content .row-sm> .one-6, #profile .content .row-sm> .one-7, #profile .content .row-sm> .five-6 {
-    padding: 4px;
-}
+
 .img-full {
     display: block;
     width: 100%;
@@ -478,15 +537,7 @@ img {
     border-radius: 4px;
 }
 
-
-
-
-
-
-
-
-
-/*INFORMATION DETAILLES SUR LA MINETTE*/
+                                                    /*INFORMATION DETAILLES SUR LA MINETTE*/
 
 #profile .content .row> [class*="col-"] {
     padding: 10px;
@@ -502,12 +553,16 @@ img {
     color: #454545;
 }
 #profile .box {
-    padding: 36px 37px;
+    padding: 26px 37px;
     background: #fff;
 }
 #profile .content .row {
     margin: -10px;
 }
+#profile .content .row> [class*="col-"] {
+    padding: 10px;
+}
+
 #profile .info .person {
     font-size: 30px;
     font-weight: 700;
@@ -592,19 +647,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     font-size: 15px;
     color: #454545;
 }
-#profile .box {
-    padding: 36px 37px;
-    background: #fff;
-}
-#profile .box-title {
-    font-size: 18px;
-    color: #fff;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    background: #3275df;
-    padding: 5.5px 20px;
-    text-transform: uppercase;
-}
+
 #profile .contact-info, #profile .prices {
     min-height: 392px;
 }
@@ -661,17 +704,9 @@ a, a:hover, a:focus, a:active:focus, button, button:hover, button:focus, button:
     padding-left: 30px !important;
     
 }
-#profile .box-title.half {
-    width: 50%;
-}
-#profile .box-title {
-    font-size: 18px;
-    color: #fff;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    background: #3275df;
-    padding: 5.5px 20px;
-    text-transform: uppercase;
+
+#profile .pictures:not(:last-child), #profile .buttons:not(:last-child), #profile .available_chat:not(:last-child), #profile .city-tours:not(:last-child), #profile .box:not(:last-child) {
+    margin-bottom: 20px;
 }
 #profile .content .row{
     margin: -10px;
@@ -699,6 +734,14 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 /* BOX COMMENTAIRES */
+
+#profile .comments {
+    padding-bottom: 70px;
+}
+#profile .city-tours, #profile .info, #profile .box {
+    font-size: 15px;
+    color: #454545;
+}
 
 #profile .comments .comments-title {
     font-size: 22px;
@@ -733,19 +776,23 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 .col-xs-6{
     width: 50%;
 }
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+
 #profile .fixed-ph-no .phone {
     font-size: 15px;
     font-family: 'Montserrat';
     font-weight: 600;
     padding: 5.5px 0;
-    
-
 }
 .phone_btn {
     display: inline-block;
     background: red;
-
-
     height: 20px;
     line-height: 20px;
     padding: 0 20px;
@@ -755,9 +802,23 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     -moz-box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
 }
+
+#profile .pictures:not(:last-child), #profile .buttons:not(:last-child), #profile .available_chat:not(:last-child), #profile .city-tours:not(:last-child), #profile .box:not(:last-child) {
+    margin-bottom: 20px;
+}
+#profile .city-tours, #profile .info, #profile .box {
+    font-size: 15px;
+    color: #454545;
+}
+/*#profile .box {
+    padding: 36px 37px;
+    background: #fff;
+}*/
+
+
 .phone_btn a {
     color: #fff;
-     
+    font-size: 16px;
 }
 #profile .fixed-ph-no .right {
     text-align: right;
