@@ -1,5 +1,5 @@
                            
-                            /*GENERAL*/
+                                                                        /*GENERAL*/
 body
 {
     font-family: 'Open sans' , sans-serif;
@@ -20,7 +20,7 @@ p
     margin-inline-start: 0px;
     margin-inline-start: 0px;
 }
-/*Header*/
+                                                                                            /*Header*/
 .navbar
 {
     background: #171717;
@@ -169,8 +169,25 @@ img
     border-color: #2b2b2b;
     border-radius: 0;
 }
+.page-heading .black 
+{
+    padding: 8px 17.5px;
+    font-size: 11px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.btn-black
+{
+    background: #000;
+    color: #fff;
+    position: relative;
+    right: 800px;
+   top: 3.5px;
+    border-radius: 0;
+}
 
-/* escorte au cameroun*/
+
+                                                                                        /* escorte au cameroun*/
 .row
 {
     margin-right: -15px;
@@ -214,7 +231,7 @@ img
     top: -20px;
     z-index: 1;
 }
-/*LISTE DES VILLES */
+                                                                        /*LISTE DES VILLES */
 
 #home .city-list
 {
@@ -242,7 +259,7 @@ img
     display: none;
 }
 
-/* choisir une ville dans la liste */
+                                                                    /* choisir une ville dans la liste */
 
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) 
 {
@@ -410,7 +427,7 @@ img
 .check-mark {
     display: none;
 }
-/* Vous etes une minette de lux */
+                                                                                /* Vous etes une minette de lux */
 
 .sidebar
 {
@@ -436,7 +453,7 @@ img
     padding: 30px 0 40px;
     border: 1px solid #909090;
 }
-/* la Copine du mois */
+                                                                                    /* la Copine du mois */
 
 .sb-widget-gotm
 {
@@ -484,7 +501,7 @@ img
     font-weight: 300;
     letter-spacing: 2px;
 }
-/*nouveau minette au cameroun*/
+                                                                                    /*nouveau minette au cameroun*/
 .container {
     position: relative;
 }
@@ -541,7 +558,7 @@ a, a:hover, a:focus, a:active:focus, button, button:hover, button:focus, button:
     padding-left: 8px;
     content: ">";
 }
-/* Presentation nouvelle Minette */
+                                                                                    /* Presentation nouvelle Minette */
 
 .sidebar {
     width: 20%;
@@ -690,7 +707,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 
 
-/* texte*/
+                                                                                        /* texte*/
 
 element.style {
     display: none;
@@ -736,11 +753,11 @@ element.style {
 
 
 
-/*Presentation des Minettes*/
+                                                                                    /*Presentation des Minettes*/
 
 
 
-/*FOOTER*/
+                                                                                            /*FOOTER*/
 
 .footer-top
 {

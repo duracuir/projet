@@ -1,4 +1,4 @@
-/*GENERAL*/
+                                                                        /*GENERAL*/
 body
 {
     font-family: 'Open sans' , sans-serif;
@@ -22,7 +22,7 @@ p
     margin-inline-start: 0px;
     margin-inline-start: 0px;
 }
-/*Header*/
+                                                                                        /*Header*/
 .navbar
 {
     background: #171717;
@@ -172,7 +172,7 @@ img
     border-radius: 0;
 }
 
-/* escorte au cameroun*/
+                                                                            /* escorte au cameroun*/
 .row
 {
     margin-right: -15px;
@@ -232,7 +232,7 @@ img
    top: 3.5px;
     border-radius: 0;
 }
-/*EDITE PROFILES !!! */
+                                                                                        /*EDITE PROFILES !!! */
 
 #edit-profile
 {

@@ -30,15 +30,24 @@ if (isset($_POST['btn_upload']))
       }
   }
 ?>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Chargement Photo</title>
+<meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=1200, initial-scale=0">
+      <title >Escorts Girl au Cameroun</title>
+      <link href="fond/favicon.png" rel="icon" type="fond/png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	
 </head>
 <body>
 	<form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data" data-abide>
 	<div class="photo-field">
-	<input type="file" name="file_img" pattern="^.+?\.(jpg|JPG|png|PNG)$" required>
+	<input type="file" name="file_img" pattern="^.+?\.(jpg|JPG|png|PNG|jif)$" required>
 	<small class="error">Charger uniquement les JPG ou PNG.</small>
 	</div>
 	<div class="title-field">

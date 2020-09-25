@@ -1,15 +1,33 @@
+<?php
+    require('connexionBD.php');
+session_start();
+if(!isset($_SESSION['username'])){
+    header('Location: connexion.php');
+    exit;
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-        <tilte></tilte>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=1200, initial-scale=0">
+        <title >Escorts Girl au Cameroun</title>
+        <link href="fond/favicon.png" rel="icon" type="fond/png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/script.js"></script>
+        <script type="application/javascript">
+                var user_info = { 'logged_in':false, 'user_id': null, 'user_type': null };
+                var signon_link = "signup.html";
+        var env = 'production';
+        </script>
     </head>
 <body id="home">
      <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -26,10 +44,6 @@
             </feMerge>
         </filter>
     </defs>
-    
-    
-    
-    
     <g id="icon-real-photos">
         <polygon points="16.67,4 13.85,20 16.89,20 19.1,7.48 56.52,14.07 52.18,38.69 48,37.96 48,50.14 53.05,51.03 60,11.64"></polygon>
         <path d="M4,20v40h44V20H4z M45,48H7V23h38V48z M41,45H11l5-7l5,4l5-7l5,5l5-8L41,45z M15,28c-1.66,0-3,1.34-3,3c0,1.66,1.34,3,3,3 c1.66,0,3-1.34,3-3C18,29.34,16.66,28,15,28z"></path>
@@ -75,7 +89,7 @@
                     <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
                     <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
                     <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="toursdeville.html/">Tournées de Ville</a></li>
+                    <li class="nav-item"><a class="nav-link" href="toursdeville.html">Tournées de Ville</a></li>
             </div>
                 </div>
                 
@@ -299,7 +313,8 @@
                                         $result = mysqli_stmt_get_result($stmt);
                                         while ($row = mysqli_fetch_assoc($result)) {
                                             echo '<a href="profilesminette.php?username='.$row["username"].'">
-                                            <div style="background-image: url(images/gallery/'.$row["photos"].');"></div>
+                                            <div style="background-image: url(images/gallery/'.$row["photos"].');">
+                                            </div>
                                             <div class="overlay">
                                             <p class="listing_desc">infos sur la fille ???</p>
                                             <p class="city">'.$row["username"].'</p>

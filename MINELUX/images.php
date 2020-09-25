@@ -27,13 +27,16 @@ if(!isset($_SESSION['username'])) {
 <head>
     <tilte></tilte>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/images.css">
-        <script src="js/script.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=1200, initial-scale=0">
+      <title >Escorts Girl au Cameroun</title>
+      <link href="fond/favicon.png" rel="icon" type="fond/png"> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/images.css">
+      <script src="js/script.js"></script>
 </head>
     <body id="edit-profile">
         <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -106,12 +109,12 @@ if(!isset($_SESSION['username'])) {
                     </div>
                     <div id="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="/index.html/">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minette/new/">Nouvelle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minette/girls/">Filles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minette/homme/">Hommes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minette/vip/">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/minette/tours/">Tournées de Ville</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nouvelles.html">Nouvelle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="toursdeville.html">Tournées de Ville</a></li>
                     
             </div>
                 </div>

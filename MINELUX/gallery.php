@@ -9,8 +9,14 @@ Developed by Robert Anthonie C. Soriano
 <html lang="en">
    <head>
       <meta charset="UTF-8">
-      <title></title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=1200, initial-scale=0">
+      <title >Escorts Girl au Cameroun</title>
+      <link href="fond/favicon.png" rel="icon" type="fond/png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/biographie.css" />
       <script src="js/vendor/jquery.js"></script>
       <script src="js/vendor/modernizr.js"></script>
@@ -58,9 +64,9 @@ Developed by Robert Anthonie C. Soriano
                     </ul>
 
                     <div class="pull-left"></div>
-                    <div class="pull-right">
-                         <div><p>Bienvenu:
-                        <a class="btn btn-primary" href="login.html">
+                    <span class="usermessage">
+                         Bienvenue:
+                        <a class="username" href="login.html">
                              <?php 
                        
                                 if(!isset($_SESSION['username'])){
@@ -71,10 +77,8 @@ Developed by Robert Anthonie C. Soriano
                                 }
                      ?>
                         </a>
-
-                                </p>
-                            </div>
-                        <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
+                        </span>   
+                        <a class="btn btn-tertiary" href="login2.php">Espace Privé</a>
                         <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
                     </div>

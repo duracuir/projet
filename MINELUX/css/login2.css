@@ -1,4 +1,4 @@
-/*GENERAL*/
+                                                                /*GENERAL*/
 body
 {
     font-family: 'Open sans' , sans-serif;
@@ -20,7 +20,7 @@ p
     margin-inline-start: 0px;
     margin-inline-start: 0px;
 }
-/*Header*/
+                                                        /*Header*/
 .navbar
 {
     background: #171717;
@@ -170,7 +170,7 @@ img
     border-radius: 0;
 }
 
-/* escorte au cameroun*/
+                                                                                /* escorte au cameroun*/
 .row
 {
     margin-right: -15px;
@@ -231,7 +231,7 @@ img
     border-radius: 0;
 }
 
-/*creer un compte*/
+                                                                                            /*creer un compte*/
 
 
 script
@@ -330,7 +330,8 @@ script
     display: inline-block;
 }
 
-input[type="radio"], input[type="checkbox"] 
+
+/*input[type="radio"], input[type="checkbox"] 
 {
     margin: 4px 0 0;
     margin-top: 1px 9px;
@@ -342,7 +343,23 @@ input[type="checkbox"], input[type="radio"]
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
+}*/
+/*#sign_up_in .box input:not([type="radio"]):not([type="submit"]):not([type="checkbox"]):not(.yadcf-filter ), #sign_up_in .box .bootstrap-select {
+    width: 100% !important;
 }
+#sign_up_in .box input:not([type="radio"]):not([type="submit"]):not([type="checkbox"]), #sign_up_in .box .bootstrap-select button {
+    height: 33px;
+    padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: none;
+    border: 1px solid #cacaca;
+    background: #fff !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #505050;
+}*/
 input, button, select, textarea 
 {
     font-family: inherit;

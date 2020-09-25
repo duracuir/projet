@@ -5,6 +5,9 @@ body
     font-family: 'Open sans' , sans-serif;
     font-size: 16px;
       background: #f7f7f7;
+      padding: 0;
+      padding-top: 0;
+
 }
 
 h1, h2, h3, h4, h5, h6, ul, p
@@ -966,32 +969,4 @@ footer {
     position: relative;
     width: 302px;
     height: 443px;
-}
-
-.gallery-container a h3 {
-    font-family: Catamaran;
-    font-size: 20px;
-    font-weight: 700;
-    color: #111;
-}
-
-.gallery-links h2 {
-    font-family: Catamaran;
-    font-size: 28px;
-    font-weight: 600;
-    color: #111;
-    text-transform: uppercase;
-}
-
-.gallery-container a {
-    width: 230px;
-    margin: 20px 10px 0;    
-}
-
-.gallery-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
 }

@@ -28,7 +28,10 @@ if (isset($_GET["username"])) {
 <head>
 	<tilte></tilte>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=1200, initial-scale=0">
+        <title >Escorts Girl au Cameroun</title>
+        <link href="fond/favicon.png" rel="icon" type="fond/png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -36,7 +39,7 @@ if (isset($_GET["username"])) {
         <link rel="stylesheet" href="css/profilesminette.css">
         <script src="js/script.js"></script>
         <script type="application/javascript">
-                var user_info = { 'logged_in':true, 'user_id': 17995, 'user_type': 2 };
+                var user_info = { 'logged_in':true, 'user_id': null, 'user_type': null,};
                 var signon_link = "/login2.php/";
         var env = 'production';
                     </script>

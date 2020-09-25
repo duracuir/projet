@@ -25,16 +25,24 @@ if(!isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<tilte></tilte>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=1200, initial-scale=0">
+        <title >Escorts Girl au Cameroun</title>
+        <link href="fond/favicon.png" rel="icon" type="fond/png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/Biographie.css">
         <script src="js/script.js"></script>
-</head>
+        <script type="application/javascript">
+                var user_info = { 'logged_in':false, 'user_id': null, 'user_type': null };
+                var signon_link = "signup.html";
+        var env = 'production';
+        </script>
+    </head>
+
     <body id="edit-profile">
         <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>

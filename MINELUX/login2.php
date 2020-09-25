@@ -3,7 +3,10 @@
 <head>
     <tilte></tilte>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=1200, initial-scale=0">
+      <title >Escorts Girl au Cameroun</title>
+      <link href="fond/favicon.png" rel="icon" type="fond/png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -41,12 +44,12 @@
                     </div>
                     <div id="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="/index.html/">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/new/">Nouvelle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/girls/">Filles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/homme/">Hommes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/vip/">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/escorts/tours/">Tournées de Ville</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nouvelles.html">Nouvelle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="toursdeville.html">Tournées de Ville</a></li>
                     
             </div>
                 </div>
@@ -140,6 +143,11 @@ if(isset($_POST['forminscription'])) {
                             <input type="text" id="email" name="email" placeholder="Courrier*"/><br>
                             <input type="text" id="email" name="email_confirm"  placeholder="Confirmer*">
                         </div><br>
+                       
+                            <input style="height:12px;width:12px;" type="radio" name="gender" value="male" form="myForm"> Masculin
+                            <input style="height:12px;width:12px;" type="radio" name="gender" value="female" form="myForm"> Feminin
+                        <br>
+                        <br>
                         <div class="custom-checkbox">
                             <input type="checkbox" id="checkterm" name="terms" value="1">
                             <label for="checkterm">"J'ai lu et j'accepte les" <a target="_blank" id="terms-link" href="terme_et_conditions.html"> Conditions generales</a>
