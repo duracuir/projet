@@ -114,7 +114,7 @@ if(!isset($_SESSION['username'])) {
                     </div>
                     <div id="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="home.php">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="nouvelles.html">Nouvelle</a></li>
                     <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
                     <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>

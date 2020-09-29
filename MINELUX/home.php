@@ -1,17 +1,27 @@
-<!DOCTYPE HTML>
+<?php
+    require('connexionBD.php');
+session_start();
+if(!isset($_SESSION['username'])){
+    header('Location: connexion.php');
+    exit;
+}
 
+
+?>
+
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=1200, initial-scale=0">
-      <title >Escorts Girl au Cameroun</title>
-      <link href="fond/favicon.png" rel="icon" type="fond/png">
+        <meta name="viewport" content="width=1200, initial-scale=0">
+        <title >Escorts Girl au Cameroun</title>
+        <link href="fond/favicon.png" rel="icon" type="fond/png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/toursdeville.css">
+        <link rel="stylesheet" href="css/styles.css">
         <script src="js/script.js"></script>
         <script type="application/javascript">
                 var user_info = { 'logged_in':false, 'user_id': null, 'user_type': null };
@@ -19,9 +29,8 @@
         var env = 'production';
         </script>
     </head>
-    
-    <body id="home">
-        <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<body id="home">
+     <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <filter id="filter-shadow" x="0" y="0" width="100%" height="100%">
             <feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
@@ -48,7 +57,7 @@
     </g>
     
 </svg>
-        <header>
+      <header>
                 <div class="top-nav">
                 <div class="container clearfix">
                     <ul class="nav navbar-nav">
@@ -58,12 +67,30 @@
                     </ul>
 
                     <div class="pull-left"></div>
-                    <div class="pull-right">
-                        <a class="btn btn-primary" href="connexion.php">S'identifier</a>
-                        <a class="btn btn-tertiary" href="login2.php">S'inscrire</a>
-                        <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
+                   <div class="pull-right">
+                        <span class="usermessage">
+                         Bienvenue:
+                        <a class="username" href="login.html">
+                             <?php 
+                       
+                                if(!isset($_SESSION['username'])){
+                                   echo "Vous n'êtes pas connecté!";
+                                }else{
+                                    echo $_SESSION['username'];
+                                
+                                }
+                     ?>
+                        </a>
+                        </span>   
+                        <a class="btn btn-tertiary" href="login2.php">Espace Privé</a>
+                        <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
+                       <!--  <a class="btn btn-tertiary" href="login2.php">S'inscrire</a>
+                        <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
+                    </div> -->
+            
                 </div>
+
                 </div>
                 </div>
                 <div class="navbar navbar-default">
@@ -73,25 +100,25 @@
                     </div>
                     <div id="navbar">
                 <ul class="nav navbar-nav">
-                      <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="nouvelles.html">Nouvelle</a></li>
                     <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
                     <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
                     <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
                     <li class="nav-item"><a class="nav-link" href="toursdeville.html">Tournées de Ville</a></li>
             </div>
-                </div>  
+                </div>
+                
             </div>
             <div class="page-heading">
             <div class="container">
             <div class="row">
                 <div class="col-xs-4 back"></div>
-                    <a href="index.php" class="btn btn-black">Retour</a>
                 <div class="col-xs-4">
-                    <h1 class="page-title"> Minette au Cameroun</h1>
+                    <h1 class="page-title"> minettes au Cameroun</h1>
                 </div>
                 <div class="col-xs-4">
-                    <p class="views">Total des minettes disponible : . . .</p>
+                    <p class="views">Total des escotes disponible : . . .</p>
                 </div>
             </div>
             </div>
@@ -141,33 +168,23 @@
                         <li data-original-index="9" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Edea</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
                         <li data-original-index="10" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Dschang</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
                         <li data-original-index="11" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Ebolowa</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="12" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Ngaoundere</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="13" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Bertoua</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="14" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Loum</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="15" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Kumba</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="16" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Foumban</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="17" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Mbouda</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="18" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Tiko</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="19" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Bafang</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="20" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Sangmélima</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="21" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Mbanga</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="22" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Melong</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="9" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Ngaoundere</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
                     </ul>
                 </div>
                     <select class="selectpicker" data-live-seach="true" tabindex="-5">
-                        <option value>Choisissez une ville</option>
-                        <option value="/minette/yaounde/">Yaoundé</option>
-                        <option value="/minette/Douala/">Douala</option>
-                        <option value="/minette/Bamenda/">Bamenda</option>
-                        <option value="/minette/Nkongsamba/">Nkongsamba</option>
-                        <option value="/minette/Bafoussam/">Bafoussam</option>
-                        <option value="/minette/Buea/">Buea</option>
-                        <option value="/minette/limbe/">Limbe</option>
-                        <option value="/minette/Kribi/">Kribi</option>
-                        <option value="/minette/edea/">Edea</option>
-                        <option value="/minette/edea/">Dschang</option>
-                        <option value="/minette/edea/">Ebolowa</option>
-                        <option value="/minette/edea/">Ngauondere</option>
+                        <option value>Choisissez une ville pour voir les minettes</option>
+                        <option value="/minettes/yaounde/">Yaounde</option>
+                        <option value="/minettes/Douala/">Douala</option>
+                        <option value="/minettes/Bamenda/">Bamenda</option>
+                        <option value="/minettes/Nkongsamba/">Nkongsamba</option>
+                        <option value="/minettes/Bafoussam/">Bafoussam</option>
+                        <option value="/minettes/Buea/">Buea</option>
+                        <option value="/minettes/limbe/">Limbe</option>
+                        <option value="/minettes/Kribi/">Kribi</option>
+                        <option value="/minettes/edea/">Edea</option>
+                        <option value="/minettes/edea/">Dschang</option>
+                        <option value="/minettes/edea/">Ebolowa</option>
+                        <option value="/minettes/edea/">Ngaoundére</option>
                     </select>
                 </div>
                 </div>
@@ -289,43 +306,60 @@
                         </form>
                     </div>
                 </div>
-                <div class="escort">
-                <div class="row row-sm">
-                    <div class="col-xs-4 escort">
-                    <div class="img"><img src="images/minette-g-1.jpg" class="img-full" alt="patricia-minette cameroun yaounde">
-                        
-                        <div class="overlay">
-                            <span>
-                                <p class="name">patricia</p>
-                                <p class="listing_desc">bonjour je suis patricia.femme Fontaine sur talence</p>
-                                <p class="city">Yaoundé</p>
-                                <p class="age">(22)</p>
-                                <p class="btn git">Voir plus...</p>
-                            </span>
-                         </div>  
-                         <a class="profile_a" href="/profil/patricia-12540"></a> 
-                    
+                <main>
+                    <div class="escort">
+                      <div class="row row-sm">  
+                         <div class="col-xs-4 escort">
+            <section class="gallery-links">
+                    <div class="wrapper">
+                        <div class="gallery-container">
+                                    <?php
+                                    $servername = "localhost";
+                                    $username = "root";
+                                    $password = "";
+                                    $dbname = "myminette";
+
+                                    $conn = mysqli_connect("$servername", $username, $password, $dbname);
+                                    $sql = "SELECT username, photos, (YEAR(CURDATE())-date_format(datenaiss, '%Y')) as datenaiss, ville FROM membres ORDER BY orderGallery DESC";
+                                    $stmt = mysqli_stmt_init($conn);
+                                    if (!mysqli_stmt_prepare($stmt, $sql)) {
+                                        echo "SQL statement failed!";
+                                    } else {
+                                        mysqli_stmt_execute($stmt);
+                                        $result = mysqli_stmt_get_result($stmt);
+                                        while ($row = mysqli_fetch_assoc($result)) {
+                                            echo '<a href="profilesminette.php?username='.$row["username"].'">
+                                            <div style="background-image: url(images/gallery/'.$row["photos"].');">
+                                            </div>
+                                            <div class="overlay">
+                                            <p class="listing_desc">infos sur la fille ???</p>
+                                            <p class="city">'.$row["username"].'</p>
+                                            <p class="city">'.$row["ville"].'</p>
+                                            <p class="age">'.$row["datenaiss"].'</p>
+                                            <p class="btn git">Voir plus...</p>
+                                        </a>';
+                                        }
+                                    }
+                                    ?>
+                            </div>
+                        </div>
                     </div>
+
+                </section>
+                                         <!-- <a class="profile_a" href=""></a>  -->
+
+            </div>
+</div>
                 </div>
-                <div class="col-xs-4 escort">
-                    <div class="img"><img src="images/minette-014.jpeg" class="img-full" alt="patricia-minette cameroun yaounde">
-                        
-                        <div class="overlay">
-                            <span>
-                                <p class="name">patricia</p>
-                                <p class="listing_desc">bonjour je suis patricia.femme Fontaine sur talence</p>
-                                <p class="city">Yaoundé</p>
-                                <p class="age">(22)</p>
-                                <p class="btn git">Voir plus...</p>
-                            </span>
-                         </div>  
-                         <a class="profile_a" href="/profil/patricia-12540"></a> 
-                    
-                    </div>
+    </main>
                 </div>
                 </div>
-                </div>
-<div class="loaderdiv" style="display:none;">
+             </div>
+            </div>
+            </div>
+        </main>
+   <!--  message aux visiteurs  -->
+    <div class="loaderdiv" style="display:none;">
                         <div class="loader">Loading...
                         </div>
                     </div>
@@ -386,3 +420,5 @@
 
     </html>
         
+</body>
+</html>

@@ -14,6 +14,11 @@
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/services.css">
         <script src="js/script.js"></script>
+        <script type="application/javascript">
+                var user_info = { 'logged_in':false, 'user_id': null, 'user_type': null };
+                var signon_link = "signup.html";
+        var env = 'production';
+        </script>
 </head>
     <body id="edit-profile">
         <header>

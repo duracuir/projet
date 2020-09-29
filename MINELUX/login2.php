@@ -14,6 +14,11 @@
         <link rel="stylesheet" href="css/login2.css">
         <script src="js/script.js"></script>
         <script src="js/jquery.js"></script>
+        <script type="application/javascript">
+                var user_info = { 'logged_in':false, 'user_id': null, 'user_type': null };
+                var signon_link = "signup.html";
+        var env = 'production';
+        </script>
 </head>
     <body id="sign_up_in">
         <header>
