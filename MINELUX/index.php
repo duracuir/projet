@@ -285,37 +285,37 @@
 				<div class="escort">
                 <div class="row row-sm">
                     <div class="col-xs-4 escort">
-		<main>
-			<section class="gallery-links">
-			<div class="wrapper">
-				<div class="gallery-container">
-				<?php
-				$servername = "localhost";
-				$username = "root";
-				$password = "";
-				$dbname = "myminette";
+                        		<main>
+                        			<section class="gallery-links">
+                        			<div class="wrapper">
+                        				<div class="gallery-container">
+                        				<?php
+                        				$servername = "localhost";
+                        				$username = "root";
+                        				$password = "";
+                        				$dbname = "myminette";
 
-				$conn = mysqli_connect("$servername", $username, $password, $dbname);
-				$sql = "SELECT photos, username FROM membres ORDER BY orderGallery DESC";
-				$stmt = mysqli_stmt_init($conn);
-				if (!mysqli_stmt_prepare($stmt, $sql)) {
-					echo "SQL statement failed!";
-				} else {
-					mysqli_stmt_execute($stmt);
-					$result = mysqli_stmt_get_result($stmt);
-					while ($row = mysqli_fetch_assoc($result)) {
-						echo '<a href="profilesminette.php?username='.$row["username"].'">
-						<div style="background-image: url(images/gallery/'.$row["photos"].');"></div>
-						<h3>'.$row["username"].'</h3>
-					</a>';
-					}
-				}
-				?>
-				</div>
-			</div>
+                        				$conn = mysqli_connect("$servername", $username, $password, $dbname);
+                        				$sql = "SELECT photos, username FROM membres ORDER BY orderGallery DESC";
+                        				$stmt = mysqli_stmt_init($conn);
+                        				if (!mysqli_stmt_prepare($stmt, $sql)) {
+                        					echo "SQL statement failed!";
+                        				} else {
+                        					mysqli_stmt_execute($stmt);
+                        					$result = mysqli_stmt_get_result($stmt);
+                        					while ($row = mysqli_fetch_assoc($result)) {
+                        						echo '<a href="profilesminette.php?username='.$row["username"].'">
+                        						<div style="background-image: url(images/gallery/'.$row["photos"].');"></div>
+                        						<h3>'.$row["username"].'</h3>
+                        					</a>';
+                        					}
+                        				}
+                        				?>
+                        				</div>
+                        			</div>
 
-		</section>
-	</main>
+                        		</section>
+                        	</main>
 </div>
                
               <!-- <?php

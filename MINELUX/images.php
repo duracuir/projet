@@ -154,6 +154,9 @@ if(!isset($_SESSION['username'])) {
                                             if(isset($_SESSION['username'])){
                                             echo '<div class="gallery-upload">
                                                 <form action="include/gallery.upload.inc.php" method="POST" enctype="multipart/form-data">
+                                                <input type="text" name="filename" placeholder="Nom photo...">
+                                                <input type="text" name="filetitle" placeholder="Titre...">
+                                                <input type="text" name="filedesc" placeholder="Description...">
                                                 <input type="file" name="file" ><br>
                                                 <button type="submit" class="btn btn-tertiary" name="submit">VALIDER</button>        
                                                 </form> 
