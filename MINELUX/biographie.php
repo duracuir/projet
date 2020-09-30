@@ -86,7 +86,7 @@ if(!isset($_SESSION['username'])) {
                     <div class="pull-right">
                         <span class="usermessage">
                          Bienvenue:
-                        <a class="username" href="login.html">
+                        <a class="username" href="panel.php">
                              <?php 
                        
                                 if(!isset($_SESSION['username'])){
@@ -198,7 +198,7 @@ if(!isset($_SESSION['username'])) {
                                         <li data-original-index="21"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Mélong</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li>                                       
                                     </ul>
                                 </div>
-                            <select id="birth_date" name="birth_date" class="selectpicker" placeholder="Âge" tabindex="-98">
+                            <select id="birth_date" name="birth_date" class="selectpicker" placeholder="ville" tabindex="0">
                                     <option value="0">Ville</option>
                                             <option selected="selected" value="18">Yaoundé</option>
                                             <option value="Yaoundé">Yaoundé</option>
@@ -229,7 +229,7 @@ if(!isset($_SESSION['username'])) {
                             <label for="start">Né(e) le:</label>
                         </div>
                             <div class="col-xs-5 grp">
-                            <input class="zone" id="date" id="start" name="trip-start" type="date" value="" min="1999-01-01" max="2080-01-01" placeholder="date de naissance"> 
+                            <input class="zone" id="date" id="start" name="trip-start" type="date" value="" min="" max="" placeholder="date de naissance"> 
                             </div>
                             <div class="col-xs-3 grp">
                             <label for="slogan">Slogan:</label>

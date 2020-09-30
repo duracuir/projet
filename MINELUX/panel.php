@@ -188,7 +188,7 @@ if(!isset($_SESSION['username'])){
         </div>
             <div class="col-xs-3">
             <div class="box">
-                <a href="gallery.php">
+                <a href="photos.php">
                 <img src="fond/Photo.png" style="margin-bottom:15px;">
                 <h5>Organiser les photos</h5></a>
             </div>

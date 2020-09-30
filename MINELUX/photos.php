@@ -1,3 +1,27 @@
+<?php
+session_start();
+  // require('connexionBD.php');
+$connection = mysqli_connect("localhost", "root", "");
+$db = mysqli_select_db($connection, 'myminette');
+if(isset($_POST['Save'])) {
+    // $name = $_GET["username"];
+ 
+ $query = "UPDATE `membres` SET datenaiss = '$_POST[datenaiss]', slogan = '$_POST[slogan]', region = '$_POST[region]', nationality = $_POST[nationality], epilation = '$_POST[epilation]', piercing = '$_POST[piercing]', tattoo = '$_POST[tattoo]'  WHERE username = '$_SESSION[username]' ";
+  $query_run = mysqli_query($connection, $query);
+  if($query_run) {
+    echo '<script type="text/javascript"> alert("Vos données ont été enregistrées avec succès") </script>';
+  } else {
+    echo '<script type="text/javascript"> alert("Echecs enregistrement de vos donnees") </script>';
+  }
+}
+
+if(!isset($_SESSION['username'])) {
+    header('location:connexion.php');
+    exit;
+}
+
+?>
+
 
 <!DOCTYPE html>
 <html>
@@ -63,10 +87,22 @@
                     </ul>
 
                     <div class="pull-left"></div>
-                    <div class="pull-right">
-                        <a class="btn btn-primary" href="login.html">S'identifier</a>
-                        <a class="btn btn-tertiary" href="signup.html">S'inscrire</a>
-                        <a class="btn btn-secondary" href="contact.html">Nous Contater</a>
+                    <span class="usermessage">
+                         Bienvenue:
+                        <a class="username" href="panel.php">
+                             <?php 
+                       
+                                if(!isset($_SESSION['username'])){
+                                   echo "Vous n'êtes pas connecté!";
+                                }else{
+                                    echo $_SESSION['username'];
+                                
+                                }
+                     ?>
+                        </a>
+                        </span>   
+                        <a class="btn btn-tertiary" href="login2.php">Espace Privé</a>
+                        <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
                     </div>
             
                 </div>
@@ -80,7 +116,7 @@
                     </div>
                     <div id="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="home.php">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="nouvelles.html">Nouvelle</a></li>
                     <li class="nav-item"><a class="nav-link" href="filles.html">Filles</a></li>
                     <li class="nav-item"><a class="nav-link" href="garcon.html">Hommes</a></li>
@@ -264,15 +300,24 @@
                     Vous devez avoir au moins 3 photos approuvées pour que  votre profile soit activer!
                 </div>
                         <div class="col-md-12 col-sm-12">
-                <form action="/panel/photos/upload/9024" class="dropzone dz-clickable" id="pictures">
-                    <div class="upload-msg"><i class="fa fa-image"></i><br> Déposez des photos ici<br><a class="btn btn-success">Telecharger</a></div>
+<?php if(isset($_SESSION['username']))
+?>
+                <form action="panel/photos/telecharger" method="post" class="dropzone dz-clickable" id="pictures" enctype="multipart/form-data">
+                    <div class="upload-msg"><i class="fa fa-image"></i><br> Déposez des photos ici<br><a class="btn btn-success">Telecharger</a>
+                
+                    </div>
                 <div class="dz-default dz-message"><span></span></div></form>
             </div>
         </div>
     </div>
     <div class="col-xs-12">
         <div class="box">
-            <h3 class="heading">Photos public de ?????????????????</h3>
+            <h3 class="heading"><?php  if(!isset($_SESSION['username'])){
+                                   echo "Vous n'êtes pas connecté!";
+                                }else{
+                                    echo $_SESSION['username'];
+                                
+                                } ?></h3>
             <div class="row row-5 public-photos ui-sortable">
                             </div>
         </div>

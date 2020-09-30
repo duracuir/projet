@@ -1,36 +1,18 @@
-<?php
-    require('connexionBD.php');
-session_start();
-if(!isset($_SESSION['username'])){
-    header('Location: connexion.php');
-    exit;
-}
-
-
-?>
-
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
+    <tilte></tilte>
         <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=1200, initial-scale=0">
-        <title >Escorts Girl au Cameroun</title>
-        <link href="fond/favicon.png" rel="icon" type="fond/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/script.js"></script>
-        <script type="application/javascript">
-                var user_info = { 'logged_in':false, 'user_id': null, 'user_type': null };
-                var signon_link = "signup.html";
-        var env = 'production';
-        </script>
-    </head>
-<body id="home">
-     <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+</head>
+    <body id="home">
+        <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <filter id="filter-shadow" x="0" y="0" width="100%" height="100%">
             <feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
@@ -57,7 +39,7 @@ if(!isset($_SESSION['username'])){
     </g>
     
 </svg>
-      <header>
+        <header>
                 <div class="top-nav">
                 <div class="container clearfix">
                     <ul class="nav navbar-nav">
@@ -72,9 +54,7 @@ if(!isset($_SESSION['username'])){
                         <a class="btn btn-tertiary" href="login2.php">S'inscrire</a>
                         <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
                     </div>
-            
                 </div>
-
                 </div>
                 </div>
                 <div class="navbar navbar-default">
@@ -91,18 +71,17 @@ if(!isset($_SESSION['username'])){
                     <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
                     <li class="nav-item"><a class="nav-link" href="toursdeville.html">Tournées de Ville</a></li>
             </div>
-                </div>
-                
+                </div>  
             </div>
             <div class="page-heading">
             <div class="container">
             <div class="row">
                 <div class="col-xs-4 back"></div>
                 <div class="col-xs-4">
-                    <h1 class="page-title"> minettes au Cameroun</h1>
+                    <h1 class="page-title"> Minette au Cameroun</h1>
                 </div>
                 <div class="col-xs-4">
-                    <p class="views">Total des escotes disponible : . . .</p>
+                    <p class="views">Total des minettes disponible : . . .</p>
                 </div>
             </div>
             </div>
@@ -152,30 +131,40 @@ if(!isset($_SESSION['username'])){
                         <li data-original-index="9" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Edea</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
                         <li data-original-index="10" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Dschang</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
                         <li data-original-index="11" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Ebolowa</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
-                        <li data-original-index="9" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Ngaoundere</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="12" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Ngaoundere</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="13" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Bertoua</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="14" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Loum</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="15" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Kumba</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="16" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Foumban</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="17" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Mbouda</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="18" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Tiko</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="19" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Bafang</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="20" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Sangmélima</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="21" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Mbanga</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
+                        <li data-original-index="22" class="selected"><a tabindex="0" class style data-tokens="null"><span class="text"> Melong</span><span class="glyphicon glyphicon-ok ckeck-mark"></span></a>
                     </ul>
                 </div>
                     <select class="selectpicker" data-live-seach="true" tabindex="-5">
-                        <option value>Choisissez une ville pour voir les minettes</option>
-                        <option value="/minettes/yaounde/">Yaounde</option>
-                        <option value="/minettes/Douala/">Douala</option>
-                        <option value="/minettes/Bamenda/">Bamenda</option>
-                        <option value="/minettes/Nkongsamba/">Nkongsamba</option>
-                        <option value="/minettes/Bafoussam/">Bafoussam</option>
-                        <option value="/minettes/Buea/">Buea</option>
-                        <option value="/minettes/limbe/">Limbe</option>
-                        <option value="/minettes/Kribi/">Kribi</option>
-                        <option value="/minettes/edea/">Edea</option>
-                        <option value="/minettes/edea/">Dschang</option>
-                        <option value="/minettes/edea/">Ebolowa</option>
-                        <option value="/minettes/edea/">Ngaoundére</option>
+                        <option value>Choisissez une ville</option>
+                        <option value="/minette/yaounde/">Yaoundé</option>
+                        <option value="/minette/Douala/">Douala</option>
+                        <option value="/minette/Bamenda/">Bamenda</option>
+                        <option value="/minette/Nkongsamba/">Nkongsamba</option>
+                        <option value="/minette/Bafoussam/">Bafoussam</option>
+                        <option value="/minette/Buea/">Buea</option>
+                        <option value="/minette/limbe/">Limbe</option>
+                        <option value="/minette/Kribi/">Kribi</option>
+                        <option value="/minette/edea/">Edea</option>
+                        <option value="/minette/edea/">Dschang</option>
+                        <option value="/minette/edea/">Ebolowa</option>
+                        <option value="/minette/edea/">Ngauondere</option>
                     </select>
                 </div>
                 </div>
                 <a href="javascript:void(0);" class="btn btn-primary show-more-cities pull-right" data-toggle="collaspse" data-target="#more-cities"><span>Voir plus</span></a>                   
                 </div>
             </div>
-        </header>
+	</header>
         <main class="container">
             <div class="row">
                 <div class="sidebar">
@@ -189,13 +178,16 @@ if(!isset($_SESSION['username'])){
                     </div>
                 <div class="sb-widget-gotm">
                     <h2 class="title">Copine du mois</h2>
-                    <a href="images/minette-01" ><div class="img"><img src="fond/minette-022.png" alt="lolita - femme minette du mois Douala" class="img-full"><div class="text"><p class="name">Lolita</p><p class="city">Douala</p></div></dir></div></a>
-                </div>
-              
+                    <a href="fond/minette-01.jpeg" ><div class="img"><img src="fond/minette-022.png" alt="lolita - femme minette du mois Douala" class="img-full"><div class="text"><p class="name">Lolita</p><p class="city">Douala</p>
                     </div>
+                </dir>
+            </div>
+        </a>
                     </div>
+					</div>
+					</div>
             <div class="content">
-              <div class="home-search">
+			  <div class="home-search">
                     <div class="search-toggle">
                         <a href="javascript:void(0);" class="btn s-toggle current advanced-off"><span>Normal search </span></a>
                         <a href="javascript:void(0);" class="btn s-toggle advanced-on"><span>Advanced Search</span></a>
@@ -290,87 +282,96 @@ if(!isset($_SESSION['username'])){
                         </form>
                     </div>
                 </div>
-                <main>
-                    <div class="escort">
-                      <div class="row row-sm">  
-                         <div class="col-xs-4 escort">
-            <section class="gallery-links">
-                    <div class="wrapper">
-                        <div class="gallery-container">
-                                    <?php
-                                    $servername = "localhost";
-                                    $username = "root";
-                                    $password = "";
-                                    $dbname = "myminette";
+				<div class="escort">
+                <div class="row row-sm">
+                    <div class="col-xs-4 escort">
+		<main>
+			<section class="gallery-links">
+			<div class="wrapper">
+				<div class="gallery-container">
+				<?php
+				$servername = "localhost";
+				$username = "root";
+				$password = "";
+				$dbname = "myminette";
 
-                                    $conn = mysqli_connect("$servername", $username, $password, $dbname);
-                                    $sql = "SELECT username, photos, (YEAR(CURDATE())-date_format(datenaiss, '%Y')) as datenaiss, ville FROM membres ORDER BY orderGallery DESC";
-                                    $stmt = mysqli_stmt_init($conn);
-                                    if (!mysqli_stmt_prepare($stmt, $sql)) {
-                                        echo "SQL statement failed!";
-                                    } else {
-                                        mysqli_stmt_execute($stmt);
-                                        $result = mysqli_stmt_get_result($stmt);
-                                        while ($row = mysqli_fetch_assoc($result)) {
-                                            echo '<a href="profilesminette.php?username='.$row["username"].'">
-                                            <div style="background-image: url(images/gallery/'.$row["photos"].');">
-                                            </div>
-                                            <div class="overlay">
-                                            <p class="listing_desc">infos sur la fille ???</p>
-                                            <p class="city">'.$row["username"].'</p>
-                                            <p class="city">'.$row["ville"].'</p>
-                                            <p class="age">'.$row["datenaiss"].'</p>
-                                            <p class="btn git">Voir plus...</p>
-                                        </a>';
-                                        }
-                                    }
-                                    ?>
-                            </div>
-                        </div>
-                    </div>
+				$conn = mysqli_connect("$servername", $username, $password, $dbname);
+				$sql = "SELECT photos, username FROM membres ORDER BY orderGallery DESC";
+				$stmt = mysqli_stmt_init($conn);
+				if (!mysqli_stmt_prepare($stmt, $sql)) {
+					echo "SQL statement failed!";
+				} else {
+					mysqli_stmt_execute($stmt);
+					$result = mysqli_stmt_get_result($stmt);
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo '<a href="#">
+						<div style="background-image: url(images/gallery/'.$row["photos"].');"></div>
+						<h3>'.$row["username"].'</h3>
+					</a>';
+					}
+				}
+				?>
+				</div>
+			</div>
 
-                </section>
-                                         <!-- <a class="profile_a" href=""></a>  -->
-
-            </div>
+		</section>
+	</main>
 </div>
-                </div>
-    </main>
-                </div>
-                </div>
-             </div>
+               
+              <!-- <?php
+               require 'connexionBD.php';
+               $stmt = $pdo->query("SELECT * FROM tbl_photos ORDER by img_id ASC");
+               foreach ($stmt as $img) {
+               ?>
+             <div class="escort">
+                <div class="row row-sm">
+                    <div class="col-xs-4 escort">
+                  <div href="gallery.php"><img class="img" class="img-full" data-caption="<?= $img['img_title']; ?>" src="<?= $img['img_path']; ?>">
+               <div class="overlay">
+                   
+                       <p class="name">lolita</p>
+                       <p class="listing_desc">dakar</p>
+                       <p class="city">douala</p>
+                       <p class="age">21</p>
+                       <p class="btn git">Voir Plus...</p>
+                   
+               </div>
+               <a class="profile_a" href=""></a>
+           </div>
+ -->
+
+                <?php }
+
+                 ?>
+            </div>
+      <!--End content-->
+      <!--MODALS-->
+      <div id="uploadModal" class="reveal-modal tiny" data-reveal></div>
+      <!--END MODALS-->
+      <div id="footer">
+         <div class="row">
+            <div class="large-6 columns" style="margin-top: -15px;">
+              <!--  &copy; 2015 Robert C. Soriano -->
+            </div>
+            </div>
+         </div>
+      </div>
+      
+  </div>
+      <script src="js/foundation.min.js"></script>
+      <script src="js/sticky-footer.js"></script>
+      <script src="js/foundation/foundation.topbar.js"></script>
+      <script src="js/foundation/foundation.reveal.js"></script>
+      <script src="js/foundation/foundation.abide.js"></script>
+      <script>
+         $(document).foundation();
+      </script>
+			 </div>
+             <div class="loaderdiv" style="display:none;" wfd-id="56"><div class="loader">Loading...</div></div>
             </div>
             </div>
         </main>
-   <!--  message aux visiteurs  -->
-    <div class="loaderdiv" style="display:none;">
-                        <div class="loader">Loading...
-                        </div>
-                    </div>
-                    <div class="text-box">
-                        Le site très complet et varié offre une multitude d’offres de minette pour une clientèle variée. Vous pourrez ainsi trouver une compagnie le temps d’une soirée, ou pour quelques heures lors d’un repas privé ou professionnel. 
-                                    Vous recherchez des viva streets de minette girls, des punternet minette, des nouvelles minettes de luxe, des minettes indépendantes, des TOP minettes et des VIP minettes. Vous trouverez obligatoirement la partenaire de vos rêves en fonction de vos critères et de vos envies. La panoplie de minette est telle que vous trouverez certainement de minette qui vous fera passer un moment très agréable et inoubliable. Nos minettes vous offrent un moment à vous, elles se plient à vos désirs et écoutent vos attentes. Vous êtes le décideur de ce moment ensemble et vous l’emmènerez dans l’endroit de votre choix et la soirée que vous aviez prévue.
 
-                                    Accompagnatrice VIP 
-                                    L’accompagnatrice VIP est une partenaire de choix pour des clients exigeants. Vous trouverez de nouvelles minettes, nouvelles VIP minettes et nouvelles call girls sur le site. 
-                                    minelux.com est un annuaire présentant des annonces de minette dans tout le Cameroun, avec lesquelles vous pouvez discuter sur Whatsapp. Grâce à ce site, vous pourrez bénéficier d’attention et d’une discrétion totale concernant les services fournis. 
-                                    Si vous souhaitez apporter un peu de peps à votre vie plutôt monotone, vous prenez contact avec une minette qui vous plait particulièrement. Si vous êtes pris par la routine au sein de votre couple et vous avez envie de mettre un peu de piment dans votre vie sexuelle, n’hésitez pas à consulter les différentes annonces.
-
-                                    Des prestations sur mesure 
-                                    Toutes les minettes sont prêtes à satisfaire vos moindres désirs, à vous contenter selon vos envies. 
-                                    Plusieurs types de services sont proposés par les minettes, vous pourrez ainsi profiter de différents massages comme le massage érotique, massage intime garanti pour vous faire sentir au septième ciel. 
-                                    La minettes que vous aurez contactée au préalable, pourra vous joindre et convenir avec vous d’un lieu de rendez-vous en fonction de votre emploi du temps et de votre disponibilité. 
-                                    Des minettes boys pour le bonheur de ces dames sont également présents sur le site, vous pourrez discuter avec eux pour connaître leurs goûts et envies. Ils vous poseront des questions pour mieux cerner vos attentes. Votre satisfaction est leur priorité. 
-
-                                    Un site dédié aux clients 
-                                    Sur minelux.com, vous pourrez vous inscrire et en tant que membre, vous aurez accès aux feedbacks des clients et d’autres membres. Cette rubrique est une garantie exceptionnelle d’expérience de qualité avec vos nouvelles minettes. De nombreuses annonces sont consultables en ligne et vous pourrez découvrir les photos des candidates, vous pouvez sélectionner une minette en particulier, découvrir sa présentation et ensuite, lui envoyer un message SMS. , elle pourra vous répondre de manière immédiate. Elle se fera un grand plaisir d’indiquer dans son message tout ce que vous désirez savoir sur elle. 
-                                    Notre site supervise l’activité en ligne de chaque minette. Toutes les annonces sont vérifiées ainsi vous pourrez les consulter de façon sereine. 
-                                    Toutes les minettes sont belles naturellement. Très bien éduquées, polies, intelligentes, elles possèdent une conversation multiple et des connaissances dans plusieurs domaines. Elles pourront vous contacter et vous rencontrer sur le lieu de votre choix.  
-          </div>
-             </div>
-            </div>
-            </div>
-        </main>
         <footer>
         <div class="footer-top">
             <div class="container">
@@ -401,8 +402,4 @@ if(!isset($_SESSION['username'])){
         <div class="copy"><small>© MINELUX 2020 Copyrigth All rigths reserved. V1.0 </small></div>
     </footer>
     </body>
-
     </html>
-        
-</body>
-</html>

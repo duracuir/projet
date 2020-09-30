@@ -58,7 +58,7 @@ if(!isset($_SESSION['username'])) {
                     <div class="pull-right">
                         <span class="usermessage">
                          Bienvenue:
-                        <a class="username" href="login.html">
+                        <a class="username" href="panel.php">
                              <?php 
                        
                                 if(!isset($_SESSION['username'])){

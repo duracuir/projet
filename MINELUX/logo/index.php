@@ -21,13 +21,13 @@ if(!isset($_SESSION['username'])){
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/styles.css">
         <script src="js/script.js"></script>
-        <script type="application/javascript">
+        <!-- <script type="application/javascript">
                 var user_info = { 'logged_in':false, 'user_id': null, 'user_type': null };
                 var signon_link = "signup.html";
         var env = 'production';
-        </script>
+        </script> -->
     </head>
 <body id="home">
      <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -67,27 +67,11 @@ if(!isset($_SESSION['username'])){
                     </ul>
 
                     <div class="pull-left"></div>
-                   <div class="pull-right">
-                        <span class="usermessage">
-                         Bienvenue:
-                        <a class="username" href="panel.php">
-                             <?php 
-                       
-                                if(!isset($_SESSION['username'])){
-                                   echo "Vous n'êtes pas connecté!";
-                                }else{
-                                    echo $_SESSION['username'];
-                                
-                                }
-                     ?>
-                        </a>
-                        </span>   
-                        <a class="btn btn-tertiary" href="login2.php">Espace Privé</a>
-                        <a class="btn btn-secondary" href="deconnexion.php">Deconnexion</a>
-                    </div>
-                       <!--  <a class="btn btn-tertiary" href="login2.php">S'inscrire</a>
+                    <div class="pull-right">
+                        <a class="btn btn-primary" href="connexion.php">S'identifier</a>
+                        <a class="btn btn-tertiary" href="login2.php">S'inscrire</a>
                         <a class="btn btn-secondary" href="contact.html">Nous Contacter</a>
-                    </div> -->
+                    </div>
             
                 </div>
 

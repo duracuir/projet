@@ -172,7 +172,22 @@ img
     border-color: #2b2b2b;
     border-radius: 0;
 }
+/* CONNEXION*/
 
+.top-nav .usermessage
+{
+  margin-right: 15px;
+}
+.username
+{
+  color: #39e70d;
+}
+a
+{
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+}
 /* escorte au cameroun*/
 .row
 {
