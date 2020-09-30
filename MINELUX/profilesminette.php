@@ -144,51 +144,37 @@ if (isset($_GET["username"])) {
                          <div class="pictures">
                             <div class="row lightgallery row-sm">
                                 <div class="col-xs-12 profile-picture">                        
-                                    <div class="img">
-                                   <!--  <?php 
-                                     echo '<a href="galleryphoto.php?username='.$username.'">
-                                        <div class="bibi">
-                                            
-                                        <div style="background-image: url(images/gallery/'.$results[0]->photos.');">
-                                        </div> 
-                                        </div> 
-                                        </a>'
-                                        
-                                    ?> -->
-                                                
-                                                </div>
-                                            </div>
-                                         
-                                <!-- Photos -->
-                        <div class="col-xs-4"> 
-                            <!-- mettre le code php pour l affichage des photos ici -->
-                            <div class="col-xs-4" wfd-id="172">
-                               <?php 
+                                    <div class="img"> 
+                                    <?php 
                                     echo '<a class="pitem" data-exthumbimage="lien de la photo.jpeg" href="galleryphoto.php?username='.$username.'">
                                             <img class="img-full" src="images/gallery/'.$results[0]->photos.'" alt="detail de la photo">
                                     </a>' 
-                                ?>
-                                    </div>   
-                        
-                           </div>
+                                ?> 
+                                                </div>
+
+                                            </div>
+                                         
+                                <!-- Photos -->
+                       
+                           
+                               
+                                    
                         </div>  
+
 								</div>
+
                          <!-- Boutton pour signaler une annonce -->
 
 						
-                        <div class="buttons">
+                        <!-- <div class="buttons">
                                 <div class="row row-sm">
                                         <div class="col-xs-12"><a href="javascript:void(0);" data-action="problem" class="btn btn-black btn-block add_report"><styles> background: red;</styles>Signaler l'annonce</a>
                                         </div>
                                 </div>
-                        </div>
+                        </div> -->
                             </div>
 
-                               
-                
-            <!-- INFORMATION DETAILLES SUR LA MINETTE-->
-            </div>    
-                
+                                            
             <div class="col-xs-8">
                 <div class="box info">
                     <div class="row">
@@ -269,7 +255,7 @@ if (isset($_GET["username"])) {
                                 <div class="col-xs-6 label-ct" wfd-id="85">Téléphone:</div>
                                 <div class="col-xs-6 label-ct" wfd-id="82">
                                     <div class="phone" wfd-id="83">
-                                        +237123456789<div class="phone_btn phone_btn_small" wfd-id="84">
+                                        ..<div class="phone_btn phone_btn_small" wfd-id="84">
                                             <a href="javascript:void(0);" onclick="showNumber(9302);">Voir le numero</a>
                                         </div>
                                     </div>
@@ -287,7 +273,7 @@ if (isset($_GET["username"])) {
                     </div>
                 </div>
                  <!--  Afficher les Services offertent -->
-
+              
                 <div class="box service-offered">
                         <h3 class="box-title half">Services</h3>
                         <div class="row">
@@ -303,7 +289,6 @@ if (isset($_GET["username"])) {
                             </ul>
                         </div>
                     </div>
-                
                 <div class="col-xs-6">
                             <div class="box prices">
                                 <h3 class="box-title">Mon Cadeau</h3>
@@ -335,6 +320,11 @@ if (isset($_GET["username"])) {
                         </div>
 -->
                                     </div>
+                               
+                
+            <!-- INFORMATION DETAILLES SUR LA MINETTE-->
+            </div>    
+
                 
                                 </div>
                 
