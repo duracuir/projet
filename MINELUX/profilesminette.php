@@ -84,7 +84,7 @@ if (isset($_GET["username"])) {
 
                     <div class="pull-left"></div>
                     <div class="pull-right">
-                        <a class="btn btn-primary" href="login.html">S'identifier</a>
+                        <a class="btn btn-primary" href="connexion.php">S'identifier</a>
                         <a class="btn btn-tertiary" href="signup.html">S'inscrire</a>
                         <a class="btn btn-secondary" href="contact.html">Nous Contater</a>
                     </div>
