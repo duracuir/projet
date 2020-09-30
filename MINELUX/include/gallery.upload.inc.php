@@ -1,11 +1,6 @@
 <?php
 session_start();
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "myminette";
 
-// $conn = mysqli_connect("$servername", $username, $password, $dbname);
 	require '../connexionBD.php';
 
 	if (isset($_POST['submit'])) {
@@ -41,22 +36,9 @@ session_start();
 						header("location: ../gallery.php?upload=empty");
 						exit();
 					} else{
-					//  {
-						// $sql = "SELECT * FROM gallery;";
-						// $stmt = mysqli_stmt_init($conn);
-						// if (!mysqli_stmt_prepare($stmt, $sql)) {
-						// 	echo "SQL statement failed!";
-						// } else {
-						// 	mysqli_stmt_execute($stmt);
-						// 	$result = mysqli_stmt_get_result($stmt);
-						// 	$rowCount = mysqli_num_rows($result);
-						// 	$setImageOrder = $rowCount + 1;
 
 					$sql = "UPDATE membres SET titleGallery = :titleGallery , descGallery = :descGallery, photos = :photos WHERE username = :username;";
 						$stmt = $pdo->prepare($sql)	;
-						// 	if (!mysqli_stmt_prepare($stmt, $sql)) {
-						// 	echo "SQL statement failed!";
-						// } else {
 						$stmt->execute(["titleGallery"=>$imageTitle, "descGallery"=>$imageDesc, "photos"=>$imageFullName, "username"=>$_SESSION['username']]);
 
 							move_uploaded_file($fileTempName, $fileDestination);

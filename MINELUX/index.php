@@ -317,32 +317,7 @@
 		</section>
 	</main>
 </div>
-               
-              <!-- <?php
-               require 'connexionBD.php';
-               $stmt = $pdo->query("SELECT * FROM tbl_photos ORDER by img_id ASC");
-               foreach ($stmt as $img) {
-               ?>
-             <div class="escort">
-                <div class="row row-sm">
-                    <div class="col-xs-4 escort">
-                  <div href="gallery.php"><img class="img" class="img-full" data-caption="<?= $img['img_title']; ?>" src="<?= $img['img_path']; ?>">
-               <div class="overlay">
-                   
-                       <p class="name">lolita</p>
-                       <p class="listing_desc">dakar</p>
-                       <p class="city">douala</p>
-                       <p class="age">21</p>
-                       <p class="btn git">Voir Plus...</p>
-                   
-               </div>
-               <a class="profile_a" href=""></a>
-           </div>
- -->
-
-                <?php }
-
-                 ?>
+          
             </div>
       <!--End content-->
       <!--MODALS-->
