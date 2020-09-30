@@ -402,8 +402,8 @@ b, strong {
 }
 .img-full {
     display: block;
-    width: 100%;
-    height: auto;
+     width: 302px;
+    height: 443px;
 }
 img {
     vertical-align: middle;

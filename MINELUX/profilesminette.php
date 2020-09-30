@@ -145,15 +145,16 @@ if (isset($_GET["username"])) {
                             <div class="row lightgallery row-sm">
                                 <div class="col-xs-12 profile-picture">                        
                                     <div class="img">
-                                    <?php 
-                                     echo '<a class="pitem" data-exthumbimage="chemin d la photo.jpeg" href="galleryphoto.php?username='.$username.'">
+                                   <!--  <?php 
+                                     echo '<a href="galleryphoto.php?username='.$username.'">
                                         <div class="bibi">
                                             
                                         <div style="background-image: url(images/gallery/'.$results[0]->photos.');">
-                                        </div>  
+                                        </div> 
+                                        </div> 
                                         </a>'
                                         
-                                    ?>
+                                    ?> -->
                                                 
                                                 </div>
                                             </div>
@@ -162,12 +163,12 @@ if (isset($_GET["username"])) {
                         <div class="col-xs-4"> 
                             <!-- mettre le code php pour l affichage des photos ici -->
                             <div class="col-xs-4" wfd-id="172">
-                                <a class="pitem" data-exthumbimage="lien de la photo.jpeg" href="lien de la page gallery.jpeg">
-                                        <img class="img-full" src="source de la photo.jpeg" alt="detail de la photo">
-                                </a> <!-- introduit ces information sans changer les class css je vais gere la suite -->
-                                
-                                    </div>
-                                 
+                               <?php 
+                                    echo '<a class="pitem" data-exthumbimage="lien de la photo.jpeg" href="galleryphoto.php?username='.$username.'">
+                                            <img class="img-full" src="images/gallery/'.$results[0]->photos.'" alt="detail de la photo">
+                                    </a>' 
+                                ?>
+                                    </div>   
                         
                            </div>
                         </div>  
