@@ -6,7 +6,7 @@ $db = mysqli_select_db($connection, 'myminette');
 if(isset($_POST['Save'])) {
     // $name = $_GET["username"];
  
- $query = "UPDATE `membres` SET datenaiss = '$_POST[datenaiss]', slogan = '$_POST[slogan]', region = '$_POST[region]', nationality = $_POST[nationality], epilation = '$_POST[epilation]', piercing = '$_POST[piercing]', tattoo = '$_POST[tattoo]'  WHERE username = '$_SESSION[username]' ";
+ $query = "UPDATE `membres` SET datenaiss = '$_POST[datenaiss]', slogan = '$_POST[slogan]', region = '$_POST[region]', nationality = $_POST[nationality], epilation = '$_POST[epilation]', piercing = '$_POST[piercing]', tattoo = '$_POST[tattoo]', ville = '$_POST[ville]'  WHERE username = '$_SESSION[username]' ";
   $query_run = mysqli_query($connection, $query);
   if($query_run) {
     echo '<script type="text/javascript"> alert("Vos données ont été enregistrées avec succès") </script>';
@@ -38,7 +38,7 @@ if(!isset($_SESSION['username'])) {
         <script src="js/script.js"></script>
         <script type="application/javascript">
                 var user_info = { 'logged_in':false, 'user_id': null, 'user_type': null };
-                var signon_link = "signup.html";
+                var signon_link = "login2.php";
         var env = 'production';
         </script>
     </head>
@@ -129,7 +129,7 @@ if(!isset($_SESSION['username'])) {
             <div class="container">
             <div class="row">
                 <div class="col-xs-4 back"></div>
-                <a href="index.html" class="btn btn-black">Retour</a>
+                <a href="index.php" class="btn btn-black">Retour</a>
                 <div class="col-xs-4">
                     <h1 class="page-title">éditer profil de minette</h1>
                 </div>
@@ -160,7 +160,7 @@ if(!isset($_SESSION['username'])) {
                                     <label for="nom">Nom*:</label>
                                 </div>
                             <div class="col-xs-5 grp">
-                            <input type="text" id="nom" name="nom" value="" placeholder="Nom">
+                            <input type="text" id="nom" name="username" value=<?php echo "$_SESSION[username]" ?> placeholder="Nom">
                             </div>
                             <div class="col-xs-1 grp">
                                 <label for="ville">Ville*</label>
@@ -168,7 +168,7 @@ if(!isset($_SESSION['username'])) {
                             </div>
                             <div class="col-xs-3 grp">
                             <div class="btn-group bootstrap-select">
-                                <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" data-id="birth_date" title="18" aria-expanded="false">
+                                <button type="button" name="ville"  class="btn dropdown-toggle btn-default" data-toggle="dropdown" data-id="birth_date" title="18" aria-expanded="false">
                                     <span class="filter-option pull-left">Ville</span>&nbsp;<span class="bs-caret"><span class="caret">
                                     </span></span>
                                 </button>
@@ -198,7 +198,7 @@ if(!isset($_SESSION['username'])) {
                                         <li data-original-index="21"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Mélong</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li>                                       
                                     </ul>
                                 </div>
-                            <select id="birth_date" name="birth_date" class="selectpicker" placeholder="ville" tabindex="0">
+                            <select id="birth_date" name="ville" class="selectpicker" placeholder="ville" tabindex="0">
                                     <option value="0">Ville</option>
                                             <option selected="selected" value="18">Yaoundé</option>
                                             <option value="Yaoundé">Yaoundé</option>
@@ -229,7 +229,7 @@ if(!isset($_SESSION['username'])) {
                             <label for="start">Né(e) le:</label>
                         </div>
                             <div class="col-xs-5 grp">
-                            <input class="zone" id="date" id="start" name="trip-start" type="date" value="" min="" max="" placeholder="date de naissance"> 
+                            <input class="zone" id="start" name="datenaiss" type="date" value="" min="" max="" placeholder="date de naissance"> 
                             </div>
                             <div class="col-xs-3 grp">
                             <label for="slogan">Slogan:</label>
@@ -243,19 +243,19 @@ if(!isset($_SESSION['username'])) {
                         </div>
                         <div class="col-xs-5 grp">
                             <div class="bloc">
-                                  <div class="select" name="region">
-                                    <select>
+                                  <div class="select">
+                                    <select name="region">
                                       <option> Région </option>
-                                      <option value="0">l’Extrême-Nord</option>
-                                      <option value="1">Nord</option>
-                                      <option value="2">l’Adamaoua</option>
-                                      <option value="3">l’Est</option>
-                                      <option value="4">Centre</option>
-                                      <option value="5">Sud</option>
-                                      <option value="6">Littoral</option>
-                                      <option value="7">l'Ouest</option>
-                                      <option value="8">Nord-Ouest</option>
-                                      <option value="9">Sud-Ouest</option>
+                                      <option value="Extrême-Nord">l’Extrême-Nord</option>
+                                      <option value="Nord">Nord</option>
+                                      <option value="Adamaoua">l’Adamaoua</option>
+                                      <option value="Est">l’Est</option>
+                                      <option value="Centre">Centre</option>
+                                      <option value="Sud">Sud</option>
+                                      <option value="Littoral">Littoral</option>
+                                      <option value="Ouest">l'Ouest</option>
+                                      <option value="Nord-Ouest">Nord-Ouest</option>
+                                      <option value="Sud-Ouest">Sud-Ouest</option>
                                     </select>
                                   </div>
                                 </div>
@@ -357,7 +357,7 @@ if(!isset($_SESSION['username'])) {
 		    
         <div class="col-xs-12">
                      <div class="nextandbackBtns">
-                      <a href="javascript:void(0);" onclick="doSave();" class="btn btn-primary save" name="Save">Enregistrer</a>
+                      <a href="#" class="btn btn-primary save" name="Save">Enregistrer</a>
                      </div>
                     </div>
             
