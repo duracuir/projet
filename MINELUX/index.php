@@ -180,7 +180,7 @@
                     <h2 class="title">Copine du mois</h2>
                     <a href="fond/minette-01.jpeg" ><div class="img"><img src="fond/minette-022.png" alt="lolita - femme minette du mois Douala" class="img-full"><div class="text"><p class="name">Lolita</p><p class="city">Douala</p>
                     </div>
-                </div>
+                </dir>
             </div>
         </a>
                     </div>

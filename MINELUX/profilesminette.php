@@ -150,7 +150,7 @@ if (isset($_GET["username"])) {
                                             <img class="img-full" src="images/gallery/'.$results[0]->photos.'" alt="detail de la photo">
                                     </a>' 
                                 ?> 
-                                <a href=""><p>voir plus...</p>
+                                <a href="galleryphoto.php"><p>Voir plus...</p>
                                 </a>
                                                 </div>
 
@@ -353,7 +353,7 @@ if (isset($_GET["username"])) {
             <div class="col-xs-6">
                 <div class="phone">
                     <div class="phone_btn">
-                        <a href="javascript:void(0);" onclick="showNumber(8787);">Voir le numéro</a>
+                        <a href="" onclick="">Voir le numéro</a>
                     </div>
                 </div>
             </div>
