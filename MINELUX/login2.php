@@ -81,60 +81,59 @@
                         <div class="col-xs-10 col-xs-offset-1">
                         <h4 class="title">Inscrivez-vous gratuitement</h4><br>
 <?php
-include('connexionBD.php');
+        include('connexionBD.php');
 
-if(isset($_POST['forminscription'])) {
-  $username = htmlspecialchars((trim($_POST['username'])));
-  $password = htmlspecialchars((trim($_POST['password'])));
-  $password_confirm = htmlspecialchars((trim($_POST['password_confirm'])));
-  $phone = htmlspecialchars((trim($_POST['phone'])));
-  $email = htmlspecialchars((trim($_POST['email'])));
-  $email_confirm = htmlspecialchars((trim($_POST['email_confirm'])));
-    try {
-  $sql = 'SELECT * FROM membres WHERE username LIKE ' . $pdo->quote($username);
-  $result = $pdo->query($sql);
-  $row = $result -> fetch();
-        $errorInfo = $pdo->errorInfo();
-        if (isset($errorInfo[2])) {
-            $error = $errorInfo[2];
-        }
-    } catch (Exception $e) {
-        $error = $e->getMessage();
-    }
-  if (isset($error)) {
-    echo "<p>$error</p>";
-} elseif (!$row) {
+        if(isset($_POST['forminscription'])) {
+        $username = htmlspecialchars((trim($_POST['username'])));
+        $password = htmlspecialchars((trim($_POST['password'])));
+        $password_confirm = htmlspecialchars((trim($_POST['password_confirm'])));
+        $phone = htmlspecialchars((trim($_POST['phone'])));
+        $email = htmlspecialchars((trim($_POST['email'])));
+        $email_confirm = htmlspecialchars((trim($_POST['email_confirm'])));
+        // $sexe =  htmlspecialchars((trim($_POST['gender'])));
+            try {
+        $sql = 'SELECT * FROM membres WHERE username LIKE ' . $pdo->quote($username);
+        $result = $pdo->query($sql);
+        $row = $result -> fetch();
+                $errorInfo = $pdo->errorInfo();
+                if (isset($errorInfo[2])) {
+                    $error = $errorInfo[2];
+                }
+            } catch (Exception $e) {
+                $error = $e->getMessage();
+            }
+        if (isset($error)) {
+            echo "<p>$error</p>";
+        } elseif (!$row) {
 
-    if($username && $password && $password_confirm) {
-        if(strlen($username)>4){
-            if(strlen($password)>=6){
-                if($password == $password_confirm) {
-                    if ($email == $email_confirm) {
-                       $statement = $pdo -> prepare( "INSERT INTO `membres` (username, password, phone, email)
-                             VALUES ('$username', '$password', '$phone', '$email')");
-                        $statement->execute(['username'=> $username, 'password' => $password, 'phone'=> $phone, 'email'=> $email]);
-                            echo "<p style='color: green; text-align: center;'>Votre compte a été créé, veuillez vous connecter</p>";
+            if($username && $password && $password_confirm && $_POST['gender']) {
+                if(strlen($username)>4){
+                    if(strlen($password)>=6){
+                        if($password == $password_confirm) {
+                            if ($email == $email_confirm) {
+                            $statement = $pdo -> prepare( "INSERT INTO `membres` (username, password, phone, email, sexe)
+                                    VALUES ('$username', '$password', '$phone', '$email', '$_POST[gender]')");
+                                $statement->execute(['username'=> $username, 'password' => $password, 'phone'=> $phone, 'email'=> $email, 'sexe'=>$_POST['gender']]);
+                                    echo "<p style='color: green; text-align: center;'>Votre compte a été créé, veuillez vous connecter</p>";
+                            } else {
+                            echo "<p style='color: red; text-align: center;'>Les adresses mails ne correspondent pas</p>";
+                            }
+                        } else {
+                        echo "<p style='color: red; text-align: center;'>Les mots de passe ne correspondent pas</p>";
+                        }
                     } else {
-                      echo "<p style='color: red; text-align: center;'>Les adresses mails ne correspondent pas</p>";
+                    echo "<p style='color: red;' text-align: center;>Le mot de passe est trop court. 6 caracteres minimum</p>";
                     }
                 } else {
-                  echo "<p style='color: red; text-align: center;'>Les mots de passe ne correspondent pas</p>";
+                echo "<p style='color: red; text-align: center;'>Le nom d'utilisateur est trop court! minimum requis 5 caracteres</p>";
                 }
             } else {
-              echo "<p style='color: red;' text-align: center;>Le mot de passe est trop court. 6 caracteres minimum</p>";
+            echo "<p style='color: red; text-align: center;'>Veuillez remplir tous les champs!</p>";
             }
         } else {
-          echo "<p style='color: red; text-align: center;'>Le nom d'utilisateur est trop court! minimum requis 5 caracteres</p>";
-          
-
+            echo "<p style='color: red; text-align: center;'>Ce compte existe deja</p>";
+        } 
         }
-    } else {
-      echo "<p style='color: red; text-align: center;'>Veuillez remplir tous les champs!</p>";
-    }
-  } else {
-      echo "<p style='color: red; text-align: center;'>Ce compte existe deja</p>";
-} 
-}
 
 ?>
 
@@ -149,8 +148,8 @@ if(isset($_POST['forminscription'])) {
                             <input type="text" id="email" name="email_confirm"  placeholder="Confirmer*">
                         </div><br>
                        
-                            <input style="height:12px;width:12px;" type="radio" name="gender" value="male" form="myForm"> Masculin
-                            <input style="height:12px;width:12px;" type="radio" name="gender" value="female" form="myForm"> Feminin
+                            <input style="height:12px;width:12px;" id="gender" type="radio" name="gender" value="Homme"> Masculin
+                            <input style="height:12px;width:12px;" id="gender" type="radio" name="gender" value="Femelle"> Feminin
                         <br>
                         <br>
                         <div class="custom-checkbox">

@@ -5,7 +5,7 @@ if (isset($_GET["username"])) {
   $username = $_GET["username"];
   try {
     $statement = $pdo->prepare( 
-     "SELECT username, photos, (YEAR(CURDATE())-date_format(datenaiss, '%Y')) as datenaiss, ville, epilation,tattoo, langue, piercing, apropos FROM membres WHERE username = :username ORDER BY orderGallery DESC"
+     "SELECT username, photos, (YEAR(CURDATE())-date_format(datenaiss, '%Y')) as datenaiss, ville, epilation,tattoo, langue, piercing, apropos, sexe FROM membres WHERE username = :username ORDER BY orderGallery DESC"
       );
     $stmt = $pdo->prepare("SELECT * FROM reception WHERE username = :username");
     $sql = $pdo->prepare("SELECT * FROM deplacement WHERE usernamed = :usernamed");
@@ -201,7 +201,7 @@ if (isset($_GET["username"])) {
                             <div class="list">
                                 <div class="row row-sm">
                                     <div class="col-xs-6 label-ct">Sexe</div>
-                                    <div class="col-xs-6">:</div>                            
+                                    <div class="col-xs-6">:<?php echo $results[0]->sexe ?></div>                            
                                     <div class="col-xs-6 label-ct">Âge</div>
                                     <div class="col-xs-6">:<?php echo $results[0]->datenaiss;?></div>
                                     <div class="col-xs-6 label-ct">Orientation sexuelles</div>
